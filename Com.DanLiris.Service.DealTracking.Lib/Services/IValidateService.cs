@@ -4,9 +4,8 @@ using System.Text;
 
 namespace Com.DanLiris.Service.DealTracking.Lib.Services
 {
-    public class IdentityService : IIdentityService
+   public interface IValidateService
     {
-        public string Username { get; set; }
-        public string Token { get; set; }
+        void Validate(dynamic viewModel);
     }
 }

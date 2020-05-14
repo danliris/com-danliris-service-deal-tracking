@@ -17,12 +17,12 @@ namespace Com.DanLiris.Service.DealTracking.WebApi.Utilities
         where TFacade : IBaseFacade<TModel>
     {
         protected readonly IMapper Mapper;
-        protected readonly IdentityService IdentityService;
-        protected readonly ValidateService ValidateService;
+        protected readonly IIdentityService IdentityService;
+        protected readonly IValidateService ValidateService;
         protected readonly TFacade Facade;
         protected readonly string ApiVersion;
 
-        public BaseController(IMapper mapper, IdentityService identityService, ValidateService validateService, TFacade facade, string apiVersion)
+        public BaseController(IMapper mapper, IIdentityService identityService, IValidateService validateService, TFacade facade, string apiVersion)
         {
             this.Mapper = mapper;
             this.IdentityService = identityService;
@@ -45,11 +45,6 @@ namespace Com.DanLiris.Service.DealTracking.WebApi.Utilities
         [HttpGet]
         public IActionResult Get(int page = 1, int size = 25, string order = "{}", [Bind(Prefix = "Select[]")]List<string> select = null, string keyword = null, string filter = "{}")
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
             try
             {
                 ValidateUser();
@@ -89,7 +84,9 @@ namespace Com.DanLiris.Service.DealTracking.WebApi.Utilities
                 Dictionary<string, object> Result =
                     new ResultFormatter(ApiVersion, Common.CREATED_STATUS_CODE, Common.OK_MESSAGE)
                     .Ok();
-                return Created(String.Concat(Request.Path, "/", model.Id), Result);
+                return Created(String.Concat(Request.Path, "/", 0), Result);
+                //return Created(String.Concat(Request.Path, "/", model.Id), Result);
+
             }
             catch (ServiceValidationException e)
             {
@@ -110,11 +107,6 @@ namespace Com.DanLiris.Service.DealTracking.WebApi.Utilities
         [HttpGet("{Id}")]
         public async Task<IActionResult> GetById([FromRoute] int id)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
             try
             {
                 TModel model = await Facade.ReadById(id);

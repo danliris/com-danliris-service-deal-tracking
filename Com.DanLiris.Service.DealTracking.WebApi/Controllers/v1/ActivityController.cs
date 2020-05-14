@@ -13,6 +13,7 @@ using AutoMapper;
 using Com.DanLiris.Service.DealTracking.Lib.Services;
 using System.IO;
 using Microsoft.WindowsAzure.Storage.Blob;
+using Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Interfaces;
 
 namespace Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1
 {
@@ -20,11 +21,11 @@ namespace Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1
     [ApiVersion("1.0")]
     [Route("v{version:apiVersion}/deal-tracking-activities")]
     [Authorize]
-    public class ActivityController : BaseController<Activity, ActivityViewModel, ActivityFacade>
+    public class ActivityController : BaseController<Activity, ActivityViewModel, IActivityFacade>
     {
         private readonly static string apiVersion = "1.0";
-        private readonly AzureStorageService azureStorageService;
-        public ActivityController(IMapper mapper, IdentityService identityService, ValidateService validateService, ActivityFacade ActivityFacade, AzureStorageService azureStorageService) : base(mapper, identityService, validateService, ActivityFacade, apiVersion)
+        private readonly IAzureStorageService azureStorageService;
+        public ActivityController(IMapper mapper, IIdentityService identityService, IValidateService validateService, IActivityFacade ActivityFacade, IAzureStorageService azureStorageService) : base(mapper, identityService, validateService, ActivityFacade, apiVersion)
         {
             this.azureStorageService = azureStorageService;
         }

@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Com.DanLiris.Service.DealTracking.Lib.Services
 {
-    public class IdentityService : IIdentityService
+  public  interface IIdentityService
     {
-        public string Username { get; set; }
-        public string Token { get; set; }
+        string Username { get; set; }
+        string Token { get; set; }
     }
 }

@@ -11,6 +11,7 @@ using Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades;
 using Com.DanLiris.Service.DealTracking.Lib.ViewModels;
 using Microsoft.EntityFrameworkCore;
 using Com.DanLiris.Service.DealTracking.WebApi.Utilities;
+using Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Interfaces;
 
 namespace Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1
 {
@@ -20,11 +21,11 @@ namespace Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1
     [Authorize]
     public class MoveActivityController : Controller
     {
-        private readonly IdentityService IdentityService;
-        private readonly DealFacade Facade;
+        private readonly IIdentityService IdentityService;
+        private readonly IDealFacade Facade;
         private const string ApiVersion = "1.0";
 
-        public MoveActivityController(IdentityService identityService, ValidateService validateService, DealFacade facade)
+        public MoveActivityController(IIdentityService identityService, IValidateService validateService, IDealFacade facade)
         {
             this.IdentityService = identityService;
             this.Facade = facade;
