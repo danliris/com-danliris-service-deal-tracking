@@ -20,6 +20,7 @@ namespace Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades
         private readonly DbSet<Activity> DbSet;
         private IdentityService IdentityService;
         private ActivityLogic ActivityLogic;
+        private IAzureStorageService azureStorageService;
 
         public ActivityFacade(IServiceProvider serviceProvider, DealTrackingDbContext dbContext)
         {
@@ -28,6 +29,8 @@ namespace Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades
             this.serviceProvider = serviceProvider;
             this.IdentityService = serviceProvider.GetService<IdentityService>();
             this.ActivityLogic = serviceProvider.GetService<ActivityLogic>();
+            this.azureStorageService = serviceProvider.GetService<IAzureStorageService>();
+           
         }
 
         public async Task<int> Create(Activity model)
@@ -68,14 +71,15 @@ namespace Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades
 
         public async Task<int> Delete(long id)
         {
-            AzureStorageService azureStorageService = serviceProvider.GetService<AzureStorageService>();
+           // AzureStorageService azureStorageService = serviceProvider.GetService<AzureStorageService>();
             Activity model = await ActivityLogic.ReadById(id);
 
             if (model.Attachments != null)
             {
                 foreach (ActivityAttachment attachment in model.Attachments)
                 {
-                    await azureStorageService.DeleteImage("Activity", attachment.FilePath);
+                    // await azureStorageService.DeleteImage("Activity", attachment.FilePath);
+                  await  this.azureStorageService.DeleteImage("Activity", attachment.FilePath);
                 }
             }
 
