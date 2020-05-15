@@ -1,5 +1,4 @@
 ﻿using Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades;
-using Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Interfaces;
 using Com.DanLiris.Service.DealTracking.Lib.Models;
 using Com.DanLiris.Service.DealTracking.Test.BusinessLogic.Utils;
 using System;
@@ -9,21 +8,22 @@ using System.Threading.Tasks;
 
 namespace Com.DanLiris.Service.DealTracking.Test.BusinessLogic.DataUtils
 {
-    public class BoardDataUtil : BaseDataUtil<BoardFacade, Board>
+  public  class CompanyDataUtil : BaseDataUtil<CompanyFacade, Company>
     {
-        public BoardDataUtil(BoardFacade facade) : base(facade)
+        public CompanyDataUtil(CompanyFacade facade) : base(facade)
         {
         }
-        public override async Task<Board> GetNewData()
+        public override async Task<Company> GetNewData()
         {
-            return new Board()
+            return new Company()
             {
                 Code = "Code",
-                Title ="Title",
-                CurrencyId =1,
-                CurrencyCode ="Rupiah",
-                CurrencySymbol = "Rp",
-
+               Name = "Name",
+                Website = "www.Website.com",
+                Industry = "Industry",
+                PhoneNumber = "0812999999",
+                City = "Solo",
+                Information = "Information"
             };
         }
     }
