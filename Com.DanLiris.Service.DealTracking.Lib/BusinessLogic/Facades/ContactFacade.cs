@@ -35,7 +35,8 @@ namespace Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades
             }
             while (this.DbSet.Any(d => d.Code.Equals(model.Code)));
 
-            model.Company = null;
+           
+         //   model.Company = null;
 
             ContactLogic.Create(model);
             return await DbContext.SaveChangesAsync();
@@ -53,7 +54,7 @@ namespace Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades
 
         public async Task<int> Update(long id, Contact model)
         {
-            model.Company = null;
+           // model.Company = null;
             ContactLogic.Update(id, model);
             return await DbContext.SaveChangesAsync();
         }

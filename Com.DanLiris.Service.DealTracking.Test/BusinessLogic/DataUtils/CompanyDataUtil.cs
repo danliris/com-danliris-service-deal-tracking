@@ -18,7 +18,7 @@ namespace Com.DanLiris.Service.DealTracking.Test.BusinessLogic.DataUtils
             return new Company()
             {
                 Code = "Code",
-               Name = "Name",
+                Name = "Name",
                 Website = "www.Website.com",
                 Industry = "Industry",
                 PhoneNumber = "0812999999",
