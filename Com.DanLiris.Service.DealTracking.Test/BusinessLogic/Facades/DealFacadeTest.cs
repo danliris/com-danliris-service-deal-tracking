@@ -9,6 +9,7 @@ using Moq;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Xunit;
 
 namespace Com.DanLiris.Service.DealTracking.Test.BusinessLogic.Facades
 {
@@ -50,6 +51,20 @@ namespace Com.DanLiris.Service.DealTracking.Test.BusinessLogic.Facades
                .Returns(stageFacade);
 
             return serviceProviderMock;
+        }
+
+
+        [Fact]
+        public virtual async void ReadThrowDbUpdateConcurrencyException()
+        {
+            var dbContext = DbContext(GetCurrentMethod());
+            var serviceProvider = GetServiceProviderMock(dbContext).Object;
+            DealFacade facade = new DealFacade(serviceProvider, dbContext);
+            var data = await DataUtil(facade, dbContext).GetTestData();
+           
+            
+            var response = await facade.Create(data);
+            Assert.NotEqual(response, 0);
         }
     }
 }

@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
+using Xunit;
 
 namespace Com.DanLiris.Service.DealTracking.Test.BusinessLogic.Facades
 {
@@ -47,6 +48,38 @@ namespace Com.DanLiris.Service.DealTracking.Test.BusinessLogic.Facades
             
 
             return serviceProviderMock;
+        }
+
+        [Fact]
+        public virtual async void CreateAttachment_Success()
+        {
+            var dbContext = DbContext(GetCurrentMethod());
+            var serviceProvider = GetServiceProviderMock(dbContext).Object;
+            ActivityFacade facade = new ActivityFacade(serviceProvider, dbContext);
+            var data = await DataUtil(facade, dbContext).GetTestData();
+
+            List<ActivityAttachment> attachments = new List<ActivityAttachment>()
+            {
+                new ActivityAttachment()
+                {
+                    FileName ="FileName",
+                    FilePath ="FilePath"
+                }
+            };
+            var response = await facade.CreateAttachment(1, attachments);
+            Assert.NotEqual(response, 0);
+        }
+
+        [Fact]
+        public virtual async void DeleteAttachment_Success()
+        {
+            var dbContext = DbContext(GetCurrentMethod());
+            var serviceProvider = GetServiceProviderMock(dbContext).Object;
+            ActivityFacade facade = new ActivityFacade(serviceProvider, dbContext);
+            var data = await DataUtil(facade, dbContext).GetTestData();
+
+            var response = await facade.DeleteAttachment(1);
+            Assert.NotEqual(response, 0);
         }
     }
 }

@@ -99,7 +99,8 @@ namespace Com.DanLiris.Service.DealTracking.Test.BusinessLogic.Utils
 
             var Response = facade.Read(1, 25, "{}", new List<string>(), "", "{}");
 
-            // Assert.NotEqual(Response.Data.Count, 0);
+            //Assert.NotEqual(Response.Item2, 0);
+            //Assert.NotEqual(Response.Data.Count, 0);
         }
 
         [Fact]

@@ -33,8 +33,6 @@ namespace Com.DanLiris.Service.DealTracking.Test.BusinessLogic.Facades
                 .Setup(x => x.GetService(typeof(CompanyLogic)))
                 .Returns(companyLogic);
 
-
-
             return serviceProviderMock;
         }
     }
