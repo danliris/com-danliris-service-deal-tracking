@@ -54,17 +54,6 @@ namespace Com.DanLiris.Service.DealTracking.Test.BusinessLogic.Facades
         }
 
 
-        [Fact]
-        public virtual async void ReadThrowDbUpdateConcurrencyException()
-        {
-            var dbContext = DbContext(GetCurrentMethod());
-            var serviceProvider = GetServiceProviderMock(dbContext).Object;
-            DealFacade facade = new DealFacade(serviceProvider, dbContext);
-            var data = await DataUtil(facade, dbContext).GetTestData();
-           
-            
-            var response = await facade.Create(data);
-            Assert.NotEqual(response, 0);
-        }
+       
     }
 }
