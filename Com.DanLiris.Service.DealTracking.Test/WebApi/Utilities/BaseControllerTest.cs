@@ -56,13 +56,13 @@ namespace Com.DanLiris.Service.DealTracking.Test.WebApi.Utilities
             return new ServiceValidationException(validationContext, validationResults);
         }
 
-        protected (Mock<IIdentityService> IdentityService, Mock<IValidateService> ValidateService, Mock<IFacade> Facade, Mock<IMapper> Mapper, Mock<IServiceProvider> ServiceProvider, Mock<IAzureStorageService> azureStorageService) GetMocks()
+        protected (Mock<IIdentityService> IdentityService, Mock<IValidateService> ValidateService, Mock<IFacade> Facade, Mock<IMapper> Mapper, Mock<IServiceProvider> ServiceProvider) GetMocks()
         {
-            return (IdentityService: new Mock<IIdentityService>(), ValidateService: new Mock<IValidateService>(), Facade: new Mock<IFacade>(), Mapper: new Mock<IMapper>(), ServiceProvider: new Mock<IServiceProvider>(), azureStorageService: new Mock<IAzureStorageService>());
+            return (IdentityService: new Mock<IIdentityService>(), ValidateService: new Mock<IValidateService>(), Facade: new Mock<IFacade>(), Mapper: new Mock<IMapper>(), ServiceProvider: new Mock<IServiceProvider>());
         }
 
 
-        protected virtual TController GetController((Mock<IIdentityService> IdentityService, Mock<IValidateService> ValidateService, Mock<IFacade> Facade, Mock<IMapper> Mapper, Mock<IServiceProvider> ServiceProvider, Mock<IAzureStorageService> azureStorageService) mocks)
+        protected virtual TController GetController((Mock<IIdentityService> IdentityService, Mock<IValidateService> ValidateService, Mock<IFacade> Facade, Mock<IMapper> Mapper, Mock<IServiceProvider> ServiceProvider) mocks)
         {
             var user = new Mock<ClaimsPrincipal>();
             var claims = new Claim[]
@@ -94,7 +94,7 @@ namespace Com.DanLiris.Service.DealTracking.Test.WebApi.Utilities
             return (int)response.GetType().GetProperty("StatusCode").GetValue(response, null);
         }
 
-        private int GetStatusCodeGet((Mock<IIdentityService> IdentityService, Mock<IValidateService> ValidateService, Mock<IFacade> Facade, Mock<IMapper> Mapper, Mock<IServiceProvider> ServiceProvider, Mock<IAzureStorageService> azureStorageService) mocks)
+        private int GetStatusCodeGet((Mock<IIdentityService> IdentityService, Mock<IValidateService> ValidateService, Mock<IFacade> Facade, Mock<IMapper> Mapper, Mock<IServiceProvider> ServiceProvider) mocks)
         {
             TController controller = this.GetController(mocks);
             IActionResult response = controller.Get();
@@ -125,7 +125,7 @@ namespace Com.DanLiris.Service.DealTracking.Test.WebApi.Utilities
             Assert.Equal((int)HttpStatusCode.InternalServerError, statusCode);
         }
 
-        private async Task<int> GetStatusCodePost((Mock<IIdentityService> IdentityService, Mock<IValidateService> ValidateService, Mock<IFacade> Facade, Mock<IMapper> Mapper, Mock<IServiceProvider> ServiceProvider, Mock<IAzureStorageService> azureStorageService) mocks)
+        private async Task<int> GetStatusCodePost((Mock<IIdentityService> IdentityService, Mock<IValidateService> ValidateService, Mock<IFacade> Facade, Mock<IMapper> Mapper, Mock<IServiceProvider> ServiceProvider) mocks)
         {
             TController controller = this.GetController(mocks);
             IActionResult response = await controller.Post(this.ViewModel);
@@ -134,7 +134,7 @@ namespace Com.DanLiris.Service.DealTracking.Test.WebApi.Utilities
         }
 
         [Fact]
-        public async System.Threading.Tasks.Task Post_WithoutException_ReturnCreated()
+        public async Task Post_WithoutException_ReturnCreated()
         {
             var mocks = this.GetMocks();
             mocks.ValidateService.Setup(s => s.Validate(It.IsAny<TViewModel>())).Verifiable();
@@ -166,7 +166,7 @@ namespace Com.DanLiris.Service.DealTracking.Test.WebApi.Utilities
             Assert.Equal((int)HttpStatusCode.InternalServerError, statusCode);
         }
 
-        protected async Task<int> GetStatusCodeGetById((Mock<IIdentityService> IdentityService, Mock<IValidateService> ValidateService, Mock<IFacade> Facade, Mock<IMapper> Mapper, Mock<IServiceProvider> ServiceProvider, Mock<IAzureStorageService> azureStorageService) mocks)
+        protected async Task<int> GetStatusCodeGetById((Mock<IIdentityService> IdentityService, Mock<IValidateService> ValidateService, Mock<IFacade> Facade, Mock<IMapper> Mapper, Mock<IServiceProvider> ServiceProvider) mocks)
         {
             TController controller = GetController(mocks);
             IActionResult response = await controller.GetById(1);
@@ -174,19 +174,20 @@ namespace Com.DanLiris.Service.DealTracking.Test.WebApi.Utilities
             return GetStatusCode(response);
         }
 
-        [Fact]
-        public virtual async Task GetById_NotNullModel_ReturnOK()
-        {
-            var mocks = GetMocks();
-            var model = new Board();
-            mocks.Facade.Setup(f => f.ReadById(It.IsAny<int>())).ReturnsAsync(Model);
+        //[Fact]
+        //public virtual async Task GetById_NotNullModel_ReturnOK()
+        //{
+        //    var mocks = GetMocks();
+        //    var model = new Board();
+           
+        //     mocks.Facade.Setup(f => f.ReadById(It.IsAny<int>())).ReturnsAsync(Model);
 
-            int statusCode = await GetStatusCodeGetById(mocks);
-            Assert.Equal((int)HttpStatusCode.OK, statusCode);
-        }
+        //    int statusCode = await GetStatusCodeGetById(mocks);
+        //    Assert.Equal((int)HttpStatusCode.OK, statusCode);
+        //}
 
         [Fact]
-        public virtual async System.Threading.Tasks.Task GetById_NullModel_ReturnNotFound()
+        public virtual async Task GetById_NullModel_ReturnNotFound()
         {
             var mocks = this.GetMocks();
             mocks.Mapper.Setup(f => f.Map<TViewModel>(It.IsAny<TModel>())).Returns(this.ViewModel);
@@ -206,7 +207,7 @@ namespace Com.DanLiris.Service.DealTracking.Test.WebApi.Utilities
         //    Assert.Equal((int)HttpStatusCode.InternalServerError, statusCode);
         //}
 
-        private async Task<int> GetStatusCodePut((Mock<IIdentityService> IdentityService, Mock<IValidateService> ValidateService, Mock<IFacade> Facade, Mock<IMapper> Mapper, Mock<IServiceProvider> ServiceProvider, Mock<IAzureStorageService> azureStorageService) mocks, int id, TViewModel viewModel)
+        private async Task<int> GetStatusCodePut((Mock<IIdentityService> IdentityService, Mock<IValidateService> ValidateService, Mock<IFacade> Facade, Mock<IMapper> Mapper, Mock<IServiceProvider> ServiceProvider) mocks, int id, TViewModel viewModel)
         {
             TController controller = this.GetController(mocks);
             IActionResult response = await controller.Put(id, viewModel);
@@ -247,7 +248,7 @@ namespace Com.DanLiris.Service.DealTracking.Test.WebApi.Utilities
         //}
 
         [Fact]
-        public async System.Threading.Tasks.Task Put_ThrowException_ReturnInternalServerError()
+        public async Task Put_ThrowException_ReturnInternalServerError()
         {
             var mocks = this.GetMocks();
             mocks.ValidateService.Setup(vs => vs.Validate(It.IsAny<TViewModel>())).Verifiable();
@@ -263,7 +264,7 @@ namespace Com.DanLiris.Service.DealTracking.Test.WebApi.Utilities
             Assert.Equal((int)HttpStatusCode.InternalServerError, statusCode);
         }
 
-        private async Task<int> GetStatusCodeDelete((Mock<IIdentityService> IdentityService, Mock<IValidateService> ValidateService, Mock<IFacade> Facade, Mock<IMapper> Mapper, Mock<IServiceProvider> ServiceProvider, Mock<IAzureStorageService> azureStorageService) mocks)
+        private async Task<int> GetStatusCodeDelete((Mock<IIdentityService> IdentityService, Mock<IValidateService> ValidateService, Mock<IFacade> Facade, Mock<IMapper> Mapper, Mock<IServiceProvider> ServiceProvider) mocks)
         {
             TController controller = this.GetController(mocks);
             IActionResult response = await controller.Delete(1);
@@ -271,7 +272,7 @@ namespace Com.DanLiris.Service.DealTracking.Test.WebApi.Utilities
         }
 
         [Fact]
-        public async System.Threading.Tasks.Task Delete_WithoutException_ReturnNoContent()
+        public async Task Delete_WithoutException_ReturnNoContent()
         {
             var mocks = this.GetMocks();
             mocks.Facade.Setup(f => f.Delete(It.IsAny<int>())).ReturnsAsync(1);

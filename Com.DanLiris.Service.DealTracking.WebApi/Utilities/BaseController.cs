@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -14,6 +15,7 @@ namespace Com.DanLiris.Service.DealTracking.WebApi.Utilities
 {
     public abstract class BaseController<TModel, TViewModel, TFacade> : Controller
         where TModel : BaseModel
+        where TViewModel : BaseViewModel, IValidatableObject
         where TFacade : IBaseFacade<TModel>
     {
         protected readonly IMapper Mapper;
@@ -105,11 +107,11 @@ namespace Com.DanLiris.Service.DealTracking.WebApi.Utilities
         }
 
         [HttpGet("{Id}")]
-        public async Task<IActionResult> GetById([FromRoute] int id)
+        public async Task<IActionResult> GetById([FromRoute] int Id)
         {
             try
             {
-                TModel model = await Facade.ReadById(id);
+                TModel model = await Facade.ReadById(Id);
 
                 if (model == null)
                 {
@@ -137,7 +139,7 @@ namespace Com.DanLiris.Service.DealTracking.WebApi.Utilities
         }
 
         [HttpPut("{Id}")]
-        public async Task<IActionResult> Put([FromRoute] int id, [FromBody] TViewModel viewModel)
+        public async Task<IActionResult> Put([FromRoute] int Id, [FromBody] TViewModel viewModel)
         {
             if (!ModelState.IsValid)
             {
@@ -151,7 +153,7 @@ namespace Com.DanLiris.Service.DealTracking.WebApi.Utilities
 
                 TModel model = Mapper.Map<TModel>(viewModel);
 
-                if (id != model.Id)
+                if (Id != model.Id)
                 {
                     Dictionary<string, object> Result =
                         new ResultFormatter(ApiVersion, Common.BAD_REQUEST_STATUS_CODE, Common.BAD_REQUEST_MESSAGE)
@@ -159,7 +161,7 @@ namespace Com.DanLiris.Service.DealTracking.WebApi.Utilities
                     return BadRequest(Result);
                 }
 
-                await Facade.Update(id, model);
+                await Facade.Update(Id, model);
 
                 return NoContent();
             }
@@ -187,7 +189,7 @@ namespace Com.DanLiris.Service.DealTracking.WebApi.Utilities
         }
 
         [HttpDelete("{Id}")]
-        public async Task<IActionResult> Delete([FromRoute] int id)
+        public async Task<IActionResult> Delete([FromRoute] int Id)
         {
             if (!ModelState.IsValid)
             {
@@ -197,7 +199,7 @@ namespace Com.DanLiris.Service.DealTracking.WebApi.Utilities
             try
             {
                 ValidateUser();
-                await Facade.Delete(id);
+              var data=  await Facade.Delete(Id);
 
                 return NoContent();
             }

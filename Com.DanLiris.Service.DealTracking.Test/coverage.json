@@ -1,0 +1,4520 @@
+{
+  "Com.DanLiris.Service.DealTracking.Lib.dll": {
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\DealTrackingDbContext.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext": {
+        "Microsoft.EntityFrameworkCore.DbSet`1<Com.DanLiris.Service.DealTracking.Lib.Models.Contact> Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext::get_Contacts()": {
+          "Lines": {
+            "15": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<Com.DanLiris.Service.DealTracking.Lib.Models.Company> Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext::get_Companies()": {
+          "Lines": {
+            "16": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<Com.DanLiris.Service.DealTracking.Lib.Models.Reason> Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext::get_DealTrackingReasons()": {
+          "Lines": {
+            "17": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<Com.DanLiris.Service.DealTracking.Lib.Models.Board> Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext::get_DealTrackingBoards()": {
+          "Lines": {
+            "19": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<Com.DanLiris.Service.DealTracking.Lib.Models.Stage> Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext::get_DealTrackingStages()": {
+          "Lines": {
+            "20": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<Com.DanLiris.Service.DealTracking.Lib.Models.Deal> Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext::get_DealTrackingDeals()": {
+          "Lines": {
+            "21": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<Com.DanLiris.Service.DealTracking.Lib.Models.Activity> Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext::get_DealTrackingActivities()": {
+          "Lines": {
+            "22": 43
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<Com.DanLiris.Service.DealTracking.Lib.Models.ActivityAttachment> Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext::get_DealTrackingActivityAttachments()": {
+          "Lines": {
+            "23": 40
+          },
+          "Branches": []
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext::OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)": {
+          "Lines": {
+            "27": 1,
+            "28": 1,
+            "30": 21,
+            "31": 5,
+            "32": 5,
+            "33": 5,
+            "34": 1
+          },
+          "Branches": [
+            {
+              "Line": 30,
+              "Offset": 88,
+              "EndOffset": 65,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 5
+            },
+            {
+              "Line": 30,
+              "Offset": 88,
+              "EndOffset": 90,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext>)": {
+          "Lines": {
+            "10": 37,
+            "11": 37,
+            "12": 37
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\ViewModels\\ActivityAttachmentViewModel.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.ViewModels.ActivityAttachmentViewModel": {
+        "System.Int64 Com.DanLiris.Service.DealTracking.Lib.ViewModels.ActivityAttachmentViewModel::get_Id()": {
+          "Lines": {
+            "9": 3
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.ActivityAttachmentViewModel::get_FileName()": {
+          "Lines": {
+            "10": 3
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.ActivityAttachmentViewModel::get_FilePath()": {
+          "Lines": {
+            "11": 3
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\ViewModels\\ActivityViewModel.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.ViewModels.ActivityViewModel": {
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.ActivityViewModel::get_Code()": {
+          "Lines": {
+            "11": 2
+          },
+          "Branches": []
+        },
+        "System.Int64 Com.DanLiris.Service.DealTracking.Lib.ViewModels.ActivityViewModel::get_DealId()": {
+          "Lines": {
+            "12": 2
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.ActivityViewModel::get_DealCode()": {
+          "Lines": {
+            "13": 2
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.ActivityViewModel::get_DealName()": {
+          "Lines": {
+            "14": 2
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.ActivityViewModel::get_Type()": {
+          "Lines": {
+            "15": 4
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.ActivityViewModel::get_Notes()": {
+          "Lines": {
+            "17": 3
+          },
+          "Branches": []
+        },
+        "System.Boolean Com.DanLiris.Service.DealTracking.Lib.ViewModels.ActivityViewModel::get_Status()": {
+          "Lines": {
+            "20": 2
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.ActivityViewModel::get_TaskTitle()": {
+          "Lines": {
+            "21": 3
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.ActivityViewModel::get_AssignedTo()": {
+          "Lines": {
+            "22": 5
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.DateTimeOffset> Com.DanLiris.Service.DealTracking.Lib.ViewModels.ActivityViewModel::get_DueDate()": {
+          "Lines": {
+            "23": 4
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<Com.DanLiris.Service.DealTracking.Lib.ViewModels.ActivityAttachmentViewModel> Com.DanLiris.Service.DealTracking.Lib.ViewModels.ActivityViewModel::get_Attachments()": {
+          "Lines": {
+            "26": 2
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.Int64> Com.DanLiris.Service.DealTracking.Lib.ViewModels.ActivityViewModel::get_StageFromId()": {
+          "Lines": {
+            "29": 2
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.ActivityViewModel::get_StageFromName()": {
+          "Lines": {
+            "30": 2
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.Int64> Com.DanLiris.Service.DealTracking.Lib.ViewModels.ActivityViewModel::get_StageToId()": {
+          "Lines": {
+            "31": 2
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.ActivityViewModel::get_StageToName()": {
+          "Lines": {
+            "32": 2
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.ViewModels.ActivityViewModel/<Validate>d__60": {
+        "System.Boolean Com.DanLiris.Service.DealTracking.Lib.ViewModels.ActivityViewModel/<Validate>d__60::MoveNext()": {
+          "Lines": {
+            "35": 1,
+            "36": 1,
+            "37": 1,
+            "38": 1,
+            "39": 1,
+            "40": 1,
+            "41": 1,
+            "43": 1,
+            "44": 1,
+            "45": 1,
+            "46": 1,
+            "48": 1,
+            "49": 1,
+            "50": 1,
+            "51": 1,
+            "53": 1,
+            "54": 1,
+            "55": 1,
+            "56": 1,
+            "57": 1,
+            "58": 1
+          },
+          "Branches": [
+            {
+              "Line": 36,
+              "Offset": 87,
+              "EndOffset": 92,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 38,
+              "Offset": 111,
+              "EndOffset": 113,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 38,
+              "Offset": 111,
+              "EndOffset": 164,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1
+            },
+            {
+              "Line": 43,
+              "Offset": 182,
+              "EndOffset": 184,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 1
+            },
+            {
+              "Line": 43,
+              "Offset": 182,
+              "EndOffset": 235,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 1
+            },
+            {
+              "Line": 48,
+              "Offset": 255,
+              "EndOffset": 257,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 1
+            },
+            {
+              "Line": 48,
+              "Offset": 255,
+              "EndOffset": 308,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 1
+            },
+            {
+              "Line": 53,
+              "Offset": 335,
+              "EndOffset": 337,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 1
+            },
+            {
+              "Line": 53,
+              "Offset": 335,
+              "EndOffset": 388,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 1
+            },
+            {
+              "Line": 36,
+              "Offset": 87,
+              "EndOffset": 389,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\ViewModels\\BoardViewModel.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.ViewModels.BoardViewModel": {
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.BoardViewModel::get_Code()": {
+          "Lines": {
+            "12": 2
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.BoardViewModel::get_Title()": {
+          "Lines": {
+            "13": 4
+          },
+          "Branches": []
+        },
+        "Com.DanLiris.Service.DealTracking.Lib.ViewModels.Integration.CurrencyViewModel Com.DanLiris.Service.DealTracking.Lib.ViewModels.BoardViewModel::get_Currency()": {
+          "Lines": {
+            "14": 4
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.ViewModels.BoardViewModel/<Validate>d__12": {
+        "System.Boolean Com.DanLiris.Service.DealTracking.Lib.ViewModels.BoardViewModel/<Validate>d__12::MoveNext()": {
+          "Lines": {
+            "17": 1,
+            "18": 1,
+            "19": 1,
+            "20": 1,
+            "21": 1,
+            "23": 1,
+            "24": 1,
+            "25": 1,
+            "26": 1,
+            "27": 1
+          },
+          "Branches": [
+            {
+              "Line": 18,
+              "Offset": 64,
+              "EndOffset": 66,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 18,
+              "Offset": 64,
+              "EndOffset": 117,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            },
+            {
+              "Line": 23,
+              "Offset": 133,
+              "EndOffset": 135,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 23,
+              "Offset": 133,
+              "EndOffset": 186,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\ViewModels\\CompanyViewModel.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.ViewModels.CompanyViewModel": {
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.CompanyViewModel::get_Code()": {
+          "Lines": {
+            "11": 3
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.CompanyViewModel::get_Name()": {
+          "Lines": {
+            "12": 4
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.CompanyViewModel::get_Website()": {
+          "Lines": {
+            "13": 2
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.CompanyViewModel::get_Industry()": {
+          "Lines": {
+            "14": 2
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.CompanyViewModel::get_PhoneNumber()": {
+          "Lines": {
+            "15": 2
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.CompanyViewModel::get_City()": {
+          "Lines": {
+            "16": 4
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.CompanyViewModel::get_Information()": {
+          "Lines": {
+            "17": 2
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.ViewModels.CompanyViewModel/<Validate>d__28": {
+        "System.Boolean Com.DanLiris.Service.DealTracking.Lib.ViewModels.CompanyViewModel/<Validate>d__28::MoveNext()": {
+          "Lines": {
+            "20": 1,
+            "21": 1,
+            "22": 1,
+            "23": 1,
+            "24": 1,
+            "25": 1
+          },
+          "Branches": [
+            {
+              "Line": 21,
+              "Offset": 50,
+              "EndOffset": 52,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 21,
+              "Offset": 50,
+              "EndOffset": 103,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\ViewModels\\ContactViewModel.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.ViewModels.ContactViewModel": {
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.ContactViewModel::get_Code()": {
+          "Lines": {
+            "11": 3
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.ContactViewModel::get_Name()": {
+          "Lines": {
+            "12": 4
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.ContactViewModel::get_Email()": {
+          "Lines": {
+            "13": 2
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.ContactViewModel::get_PhoneNumber()": {
+          "Lines": {
+            "14": 2
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.ContactViewModel::get_JobTitle()": {
+          "Lines": {
+            "15": 2
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.ContactViewModel::get_Information()": {
+          "Lines": {
+            "16": 2
+          },
+          "Branches": []
+        },
+        "Com.DanLiris.Service.DealTracking.Lib.ViewModels.CompanyViewModel Com.DanLiris.Service.DealTracking.Lib.ViewModels.ContactViewModel::get_Company()": {
+          "Lines": {
+            "17": 2
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.ViewModels.ContactViewModel/<Validate>d__28": {
+        "System.Boolean Com.DanLiris.Service.DealTracking.Lib.ViewModels.ContactViewModel/<Validate>d__28::MoveNext()": {
+          "Lines": {
+            "20": 1,
+            "21": 1,
+            "22": 1,
+            "23": 1,
+            "24": 1,
+            "25": 1
+          },
+          "Branches": [
+            {
+              "Line": 21,
+              "Offset": 50,
+              "EndOffset": 52,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 21,
+              "Offset": 50,
+              "EndOffset": 103,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\ViewModels\\DealViewModel.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.ViewModels.DealViewModel": {
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.DealViewModel::get_Code()": {
+          "Lines": {
+            "11": 2
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.DealViewModel::get_Name()": {
+          "Lines": {
+            "12": 4
+          },
+          "Branches": []
+        },
+        "System.Double Com.DanLiris.Service.DealTracking.Lib.ViewModels.DealViewModel::get_Amount()": {
+          "Lines": {
+            "13": 4
+          },
+          "Branches": []
+        },
+        "System.Double Com.DanLiris.Service.DealTracking.Lib.ViewModels.DealViewModel::get_Quantity()": {
+          "Lines": {
+            "14": 4
+          },
+          "Branches": []
+        },
+        "Com.DanLiris.Service.DealTracking.Lib.ViewModels.CompanyViewModel Com.DanLiris.Service.DealTracking.Lib.ViewModels.DealViewModel::get_Company()": {
+          "Lines": {
+            "15": 3
+          },
+          "Branches": []
+        },
+        "Com.DanLiris.Service.DealTracking.Lib.ViewModels.ContactViewModel Com.DanLiris.Service.DealTracking.Lib.ViewModels.DealViewModel::get_Contact()": {
+          "Lines": {
+            "16": 3
+          },
+          "Branches": []
+        },
+        "Com.DanLiris.Service.DealTracking.Lib.ViewModels.Integration.UomViewModel Com.DanLiris.Service.DealTracking.Lib.ViewModels.DealViewModel::get_Uom()": {
+          "Lines": {
+            "17": 3
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.DateTimeOffset> Com.DanLiris.Service.DealTracking.Lib.ViewModels.DealViewModel::get_CloseDate()": {
+          "Lines": {
+            "18": 3
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.DealViewModel::get_Description()": {
+          "Lines": {
+            "19": 2
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.DealViewModel::get_Reason()": {
+          "Lines": {
+            "20": 2
+          },
+          "Branches": []
+        },
+        "System.Int64 Com.DanLiris.Service.DealTracking.Lib.ViewModels.DealViewModel::get_StageId()": {
+          "Lines": {
+            "21": 2
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.ViewModels.DealViewModel/<Validate>d__44": {
+        "System.Boolean Com.DanLiris.Service.DealTracking.Lib.ViewModels.DealViewModel/<Validate>d__44::MoveNext()": {
+          "Lines": {
+            "24": 1,
+            "25": 1,
+            "26": 1,
+            "27": 1,
+            "28": 1,
+            "30": 1,
+            "31": 1,
+            "32": 1,
+            "33": 1,
+            "35": 1,
+            "36": 1,
+            "37": 1,
+            "38": 1,
+            "40": 1,
+            "41": 1,
+            "42": 1,
+            "43": 1,
+            "45": 1,
+            "46": 1,
+            "47": 1,
+            "48": 1,
+            "50": 1,
+            "51": 1,
+            "52": 1,
+            "53": 1,
+            "55": 1,
+            "56": 1,
+            "57": 1,
+            "58": 1,
+            "59": 1
+          },
+          "Branches": [
+            {
+              "Line": 25,
+              "Offset": 109,
+              "EndOffset": 111,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 25,
+              "Offset": 109,
+              "EndOffset": 162,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            },
+            {
+              "Line": 30,
+              "Offset": 186,
+              "EndOffset": 188,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 30,
+              "Offset": 186,
+              "EndOffset": 239,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1
+            },
+            {
+              "Line": 35,
+              "Offset": 255,
+              "EndOffset": 257,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 1
+            },
+            {
+              "Line": 35,
+              "Offset": 255,
+              "EndOffset": 308,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 1
+            },
+            {
+              "Line": 40,
+              "Offset": 334,
+              "EndOffset": 336,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 1
+            },
+            {
+              "Line": 40,
+              "Offset": 334,
+              "EndOffset": 387,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 1
+            },
+            {
+              "Line": 45,
+              "Offset": 405,
+              "EndOffset": 407,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 1
+            },
+            {
+              "Line": 45,
+              "Offset": 405,
+              "EndOffset": 458,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 1
+            },
+            {
+              "Line": 50,
+              "Offset": 476,
+              "EndOffset": 478,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 1
+            },
+            {
+              "Line": 50,
+              "Offset": 476,
+              "EndOffset": 529,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 1
+            },
+            {
+              "Line": 55,
+              "Offset": 556,
+              "EndOffset": 558,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 1
+            },
+            {
+              "Line": 55,
+              "Offset": 556,
+              "EndOffset": 609,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 1
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\ViewModels\\MoveActivityViewModel.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.ViewModels.MoveActivityViewModel": {
+        "System.Int64 Com.DanLiris.Service.DealTracking.Lib.ViewModels.MoveActivityViewModel::get_SourceStageId()": {
+          "Lines": {
+            "9": 2
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.MoveActivityViewModel::get_SourceDealsOrder()": {
+          "Lines": {
+            "10": 2
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.MoveActivityViewModel::get_SourceStageName()": {
+          "Lines": {
+            "11": 2
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.MoveActivityViewModel::get_Type()": {
+          "Lines": {
+            "12": 2
+          },
+          "Branches": []
+        },
+        "System.Int64 Com.DanLiris.Service.DealTracking.Lib.ViewModels.MoveActivityViewModel::get_TargetStageId()": {
+          "Lines": {
+            "13": 2
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.MoveActivityViewModel::get_TargetDealsOrder()": {
+          "Lines": {
+            "14": 2
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.MoveActivityViewModel::get_TargetStageName()": {
+          "Lines": {
+            "15": 2
+          },
+          "Branches": []
+        },
+        "System.Int64 Com.DanLiris.Service.DealTracking.Lib.ViewModels.MoveActivityViewModel::get_DealId()": {
+          "Lines": {
+            "16": 2
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\ViewModels\\ReasonViewModel..cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.ViewModels.ReasonViewModel": {
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.ReasonViewModel::get_Code()": {
+          "Lines": {
+            "11": 2
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.ReasonViewModel::get_LoseReason()": {
+          "Lines": {
+            "12": 4
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.ViewModels.ReasonViewModel/<Validate>d__8": {
+        "System.Boolean Com.DanLiris.Service.DealTracking.Lib.ViewModels.ReasonViewModel/<Validate>d__8::MoveNext()": {
+          "Lines": {
+            "15": 1,
+            "16": 1,
+            "17": 1,
+            "18": 1,
+            "19": 1,
+            "20": 1
+          },
+          "Branches": [
+            {
+              "Line": 16,
+              "Offset": 50,
+              "EndOffset": 52,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 16,
+              "Offset": 50,
+              "EndOffset": 103,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\ViewModels\\StageDealViewModel.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.ViewModels.StageDealViewModel": {
+        "System.Int64 Com.DanLiris.Service.DealTracking.Lib.ViewModels.StageDealViewModel::get_Id()": {
+          "Lines": {
+            "9": 2
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.StageDealViewModel::get_CreatedBy()": {
+          "Lines": {
+            "10": 2
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.StageDealViewModel::get_Code()": {
+          "Lines": {
+            "11": 3
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.StageDealViewModel::get_Name()": {
+          "Lines": {
+            "12": 2
+          },
+          "Branches": []
+        },
+        "System.Double Com.DanLiris.Service.DealTracking.Lib.ViewModels.StageDealViewModel::get_Amount()": {
+          "Lines": {
+            "13": 2
+          },
+          "Branches": []
+        },
+        "System.Double Com.DanLiris.Service.DealTracking.Lib.ViewModels.StageDealViewModel::get_Quantity()": {
+          "Lines": {
+            "14": 2
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.StageDealViewModel::get_CompanyName()": {
+          "Lines": {
+            "15": 2
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.StageDealViewModel::get_ContactName()": {
+          "Lines": {
+            "16": 2
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.StageDealViewModel::get_UomUnit()": {
+          "Lines": {
+            "17": 2
+          },
+          "Branches": []
+        },
+        "System.DateTimeOffset Com.DanLiris.Service.DealTracking.Lib.ViewModels.StageDealViewModel::get_CloseDate()": {
+          "Lines": {
+            "18": 2
+          },
+          "Branches": []
+        },
+        "System.Int64 Com.DanLiris.Service.DealTracking.Lib.ViewModels.StageDealViewModel::get_StageId()": {
+          "Lines": {
+            "19": 2
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\ViewModels\\StageViewModel.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.ViewModels.StageViewModel": {
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.StageViewModel::get_Code()": {
+          "Lines": {
+            "11": 2
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.StageViewModel::get_Name()": {
+          "Lines": {
+            "12": 4
+          },
+          "Branches": []
+        },
+        "System.Int64 Com.DanLiris.Service.DealTracking.Lib.ViewModels.StageViewModel::get_BoardId()": {
+          "Lines": {
+            "13": 2
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.StageViewModel::get_DealsOrder()": {
+          "Lines": {
+            "14": 2
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<Com.DanLiris.Service.DealTracking.Lib.ViewModels.StageDealViewModel> Com.DanLiris.Service.DealTracking.Lib.ViewModels.StageViewModel::get_Deals()": {
+          "Lines": {
+            "15": 2
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.ViewModels.StageViewModel/<Validate>d__20": {
+        "System.Boolean Com.DanLiris.Service.DealTracking.Lib.ViewModels.StageViewModel/<Validate>d__20::MoveNext()": {
+          "Lines": {
+            "18": 1,
+            "19": 1,
+            "20": 1,
+            "21": 1,
+            "22": 1,
+            "23": 1
+          },
+          "Branches": [
+            {
+              "Line": 19,
+              "Offset": 50,
+              "EndOffset": 52,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 19,
+              "Offset": 50,
+              "EndOffset": 103,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\ViewModels\\Integration\\CurrencyViewModel.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.ViewModels.Integration.CurrencyViewModel": {
+        "System.Int32 Com.DanLiris.Service.DealTracking.Lib.ViewModels.Integration.CurrencyViewModel::get_Id()": {
+          "Lines": {
+            "9": 3
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.Integration.CurrencyViewModel::get_Code()": {
+          "Lines": {
+            "10": 3
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.Integration.CurrencyViewModel::get_Symbol()": {
+          "Lines": {
+            "11": 3
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\ViewModels\\Integration\\UomViewModel.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.ViewModels.Integration.UomViewModel": {
+        "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.Integration.UomViewModel::get_Unit()": {
+          "Lines": {
+            "9": 3
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\Utilities\\BaseViewModel.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.Utilities.BaseViewModel": {
+        "System.Int32 Com.DanLiris.Service.DealTracking.Lib.Utilities.BaseViewModel::get_Id()": {
+          "Lines": {
+            "9": 8
+          },
+          "Branches": []
+        },
+        "System.Boolean Com.DanLiris.Service.DealTracking.Lib.Utilities.BaseViewModel::get_IsDeleted()": {
+          "Lines": {
+            "10": 2
+          },
+          "Branches": []
+        },
+        "System.Boolean Com.DanLiris.Service.DealTracking.Lib.Utilities.BaseViewModel::get_Active()": {
+          "Lines": {
+            "11": 3
+          },
+          "Branches": []
+        },
+        "System.DateTime Com.DanLiris.Service.DealTracking.Lib.Utilities.BaseViewModel::get_CreatedUtc()": {
+          "Lines": {
+            "12": 2
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Utilities.BaseViewModel::get_CreatedBy()": {
+          "Lines": {
+            "13": 2
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Utilities.BaseViewModel::get_CreatedAgent()": {
+          "Lines": {
+            "14": 2
+          },
+          "Branches": []
+        },
+        "System.DateTime Com.DanLiris.Service.DealTracking.Lib.Utilities.BaseViewModel::get_LastModifiedUtc()": {
+          "Lines": {
+            "15": 2
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Utilities.BaseViewModel::get_LastModifiedBy()": {
+          "Lines": {
+            "16": 2
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Utilities.BaseViewModel::get_LastModifiedAgent()": {
+          "Lines": {
+            "17": 2
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\Utilities\\CodeGenerator.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.Utilities.CodeGenerator": {
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Utilities.CodeGenerator::Generate()": {
+          "Lines": {
+            "14": 42,
+            "15": 42,
+            "16": 42
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\Utilities\\QueryHelper.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.Utilities.QueryHelper`1": {
+        "System.Linq.IQueryable`1<TModel> Com.DanLiris.Service.DealTracking.Lib.Utilities.QueryHelper`1::Search(System.Linq.IQueryable`1<TModel>,System.Collections.Generic.List`1<System.String>,System.String)": {
+          "Lines": {
+            "13": 7,
+            "15": 7,
+            "16": 7,
+            "17": 7,
+            "18": 43,
+            "19": 11,
+            "20": 11,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "26": 11,
+            "27": 11,
+            "28": 11,
+            "29": 11,
+            "31": 7,
+            "33": 7,
+            "34": 7,
+            "35": 7,
+            "36": 7
+          },
+          "Branches": [
+            {
+              "Line": 15,
+              "Offset": 7,
+              "EndOffset": 12,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 7
+            },
+            {
+              "Line": 18,
+              "Offset": 126,
+              "EndOffset": 29,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 11
+            },
+            {
+              "Line": 20,
+              "Offset": 53,
+              "EndOffset": 55,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 20,
+              "Offset": 53,
+              "EndOffset": 103,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 11
+            },
+            {
+              "Line": 18,
+              "Offset": 126,
+              "EndOffset": 128,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 7
+            },
+            {
+              "Line": 15,
+              "Offset": 7,
+              "EndOffset": 180,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 7
+            }
+          ]
+        },
+        "System.Linq.IQueryable`1<TModel> Com.DanLiris.Service.DealTracking.Lib.Utilities.QueryHelper`1::Filter(System.Linq.IQueryable`1<TModel>,System.Collections.Generic.Dictionary`2<System.String,System.Object>)": {
+          "Lines": {
+            "39": 7,
+            "40": 7,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 7,
+            "52": 7
+          },
+          "Branches": [
+            {
+              "Line": 40,
+              "Offset": 2,
+              "EndOffset": 4,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 7
+            },
+            {
+              "Line": 40,
+              "Offset": 2,
+              "EndOffset": 24,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 40,
+              "Offset": 27,
+              "EndOffset": 29,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 42,
+              "Offset": 115,
+              "EndOffset": 40,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 42,
+              "Offset": 115,
+              "EndOffset": 117,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 40,
+              "Offset": 27,
+              "EndOffset": 135,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 7
+            }
+          ]
+        },
+        "System.Linq.IQueryable`1<TModel> Com.DanLiris.Service.DealTracking.Lib.Utilities.QueryHelper`1::Order(System.Linq.IQueryable`1<TModel>,System.Collections.Generic.Dictionary`2<System.String,System.String>)": {
+          "Lines": {
+            "55": 7,
+            "57": 7,
+            "58": 7,
+            "59": 7,
+            "61": 7,
+            "62": 7,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "69": 0,
+            "70": 0,
+            "71": 7,
+            "72": 7
+          },
+          "Branches": [
+            {
+              "Line": 57,
+              "Offset": 18,
+              "EndOffset": 20,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 7
+            },
+            {
+              "Line": 57,
+              "Offset": 18,
+              "EndOffset": 111,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\Utilities\\ServiceValidationException.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.Utilities.ServiceValidationException": {
+        "System.ComponentModel.DataAnnotations.ValidationContext Com.DanLiris.Service.DealTracking.Lib.Utilities.ServiceValidationException::get_ValidationContext()": {
+          "Lines": {
+            "20": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IEnumerable`1<System.ComponentModel.DataAnnotations.ValidationResult> Com.DanLiris.Service.DealTracking.Lib.Utilities.ServiceValidationException::get_ValidationResults()": {
+          "Lines": {
+            "21": 12
+          },
+          "Branches": []
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.Utilities.ServiceValidationException::.ctor(System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.IEnumerable`1<System.ComponentModel.DataAnnotations.ValidationResult>)": {
+          "Lines": {
+            "10": 6,
+            "11": 6,
+            "13": 6
+          },
+          "Branches": []
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.Utilities.ServiceValidationException::.ctor(System.String,System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.IEnumerable`1<System.ComponentModel.DataAnnotations.ValidationResult>)": {
+          "Lines": {
+            "14": 6,
+            "15": 6,
+            "16": 6,
+            "17": 6,
+            "18": 6
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\Utilities\\BaseClass\\BaseLogic.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.Utilities.BaseClass.BaseLogic`1": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.Utilities.BaseClass.BaseLogic`1::Create(TModel)": {
+          "Lines": {
+            "28": 42,
+            "29": 42,
+            "30": 42,
+            "31": 42
+          },
+          "Branches": []
+        },
+        "System.Threading.Tasks.Task`1<TModel> Com.DanLiris.Service.DealTracking.Lib.Utilities.BaseClass.BaseLogic`1::ReadById(System.Int64)": {
+          "Lines": {
+            "34": 10,
+            "35": 10,
+            "36": 10
+          },
+          "Branches": []
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.Utilities.BaseClass.BaseLogic`1::Update(System.Int64,TModel)": {
+          "Lines": {
+            "39": 13,
+            "40": 13,
+            "41": 13,
+            "42": 13
+          },
+          "Branches": []
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.Utilities.BaseClass.BaseLogic`1::.ctor(System.IServiceProvider,Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext)": {
+          "Lines": {
+            "19": 47,
+            "20": 47,
+            "21": 47,
+            "22": 47,
+            "23": 47
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.Utilities.BaseClass.BaseLogic`1/<Delete>d__7": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.Utilities.BaseClass.BaseLogic`1/<Delete>d__7::MoveNext()": {
+          "Lines": {
+            "45": 8,
+            "46": 8,
+            "47": 8,
+            "48": 8,
+            "49": 8
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\Utilities\\BaseClass\\BaseModel.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.Utilities.BaseClass.BaseModel": {
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Utilities.BaseClass.BaseModel::get_UId()": {
+          "Lines": {
+            "10": 589
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\Services\\AzureStorageService.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.Services.AzureStorageService": {
+        "System.IServiceProvider Com.DanLiris.Service.DealTracking.Lib.Services.AzureStorageService::get_ServiceProvider()": {
+          "Lines": {
+            "14": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.WindowsAzure.Storage.Blob.CloudBlobContainer Com.DanLiris.Service.DealTracking.Lib.Services.AzureStorageService::GetStorageContainer()": {
+          "Lines": {
+            "37": 0,
+            "38": 0,
+            "39": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.WindowsAzure.Storage.Blob.BlobContainerPermissions Com.DanLiris.Service.DealTracking.Lib.Services.AzureStorageService::SetContainerPermission(System.Boolean)": {
+          "Lines": {
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0
+          },
+          "Branches": [
+            {
+              "Line": 57,
+              "Offset": 10,
+              "EndOffset": 12,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 57,
+              "Offset": 10,
+              "EndOffset": 22,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Services.AzureStorageService::GenerateFileName(System.String)": {
+          "Lines": {
+            "65": 0,
+            "66": 0,
+            "67": 0
+          },
+          "Branches": []
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.Services.AzureStorageService::.ctor(System.IServiceProvider)": {
+          "Lines": {
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "28": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.Services.AzureStorageService/<Configure>d__9": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.Services.AzureStorageService/<Configure>d__9::MoveNext()": {
+          "Lines": {
+            "42": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "48": 0,
+            "49": 0,
+            "51": 0,
+            "52": 0
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.Services.AzureStorageService/<UploadFile>d__12": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.Services.AzureStorageService/<UploadFile>d__12::MoveNext()": {
+          "Lines": {
+            "70": 0,
+            "71": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.Services.AzureStorageService/<DownloadFile>d__13": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.Services.AzureStorageService/<DownloadFile>d__13::MoveNext()": {
+          "Lines": {
+            "80": 0,
+            "82": 0,
+            "83": 0,
+            "84": 0,
+            "85": 0,
+            "87": 0,
+            "88": 0,
+            "90": 0,
+            "91": 0
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.Services.AzureStorageService/<DeleteImage>d__14": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.Services.AzureStorageService/<DeleteImage>d__14::MoveNext()": {
+          "Lines": {
+            "94": 0,
+            "96": 0,
+            "97": 0,
+            "99": 0,
+            "100": 0,
+            "101": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\Services\\HttpClientService.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.Services.HttpClientService": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.Services.HttpClientService::.ctor(Com.DanLiris.Service.DealTracking.Lib.Services.IIdentityService)": {
+          "Lines": {
+            "11": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "17": 0
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.Services.HttpClientService/<PutAsync>d__2": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.Services.HttpClientService/<PutAsync>d__2::MoveNext()": {
+          "Lines": {
+            "20": 0,
+            "21": 0,
+            "22": 0
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.Services.HttpClientService/<GetAsync>d__3": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.Services.HttpClientService/<GetAsync>d__3::MoveNext()": {
+          "Lines": {
+            "25": 0,
+            "26": 0,
+            "27": 0
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.Services.HttpClientService/<PostAsync>d__4": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.Services.HttpClientService/<PostAsync>d__4::MoveNext()": {
+          "Lines": {
+            "30": 0,
+            "31": 0,
+            "32": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\Services\\IdentityService.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.Services.IdentityService": {
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Services.IdentityService::get_Username()": {
+          "Lines": {
+            "9": 109
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Services.IdentityService::get_Token()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\Services\\ValidateService.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.Services.ValidateService": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.Services.ValidateService::Validate(System.Object)": {
+          "Lines": {
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0
+          },
+          "Branches": [
+            {
+              "Line": 21,
+              "Offset": 12,
+              "EndOffset": 16,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 12,
+              "EndOffset": 89,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 23,
+              "Offset": 133,
+              "EndOffset": 137,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 23,
+              "Offset": 133,
+              "EndOffset": 181,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 23,
+              "Offset": 201,
+              "EndOffset": 205,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 23,
+              "Offset": 201,
+              "EndOffset": 249,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 23,
+              "Offset": 269,
+              "EndOffset": 273,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 23,
+              "Offset": 269,
+              "EndOffset": 362,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 23,
+              "Offset": 408,
+              "EndOffset": 410,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 23,
+              "Offset": 408,
+              "EndOffset": 418,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.Services.ValidateService::.ctor(System.IServiceProvider)": {
+          "Lines": {
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\Models\\Activity.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.Models.Activity": {
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Activity::get_Code()": {
+          "Lines": {
+            "13": 106
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Activity::get_DealCode()": {
+          "Lines": {
+            "15": 77
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Activity::get_DealName()": {
+          "Lines": {
+            "17": 77
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Activity::get_Type()": {
+          "Lines": {
+            "19": 87
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Activity::get_Notes()": {
+          "Lines": {
+            "21": 82
+          },
+          "Branches": []
+        },
+        "System.Boolean Com.DanLiris.Service.DealTracking.Lib.Models.Activity::get_Status()": {
+          "Lines": {
+            "24": 82
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Activity::get_TaskTitle()": {
+          "Lines": {
+            "26": 82
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Activity::get_AssignedTo()": {
+          "Lines": {
+            "28": 82
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.DateTimeOffset> Com.DanLiris.Service.DealTracking.Lib.Models.Activity::get_DueDate()": {
+          "Lines": {
+            "29": 82
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.ICollection`1<Com.DanLiris.Service.DealTracking.Lib.Models.ActivityAttachment> Com.DanLiris.Service.DealTracking.Lib.Models.Activity::get_Attachments()": {
+          "Lines": {
+            "32": 119
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.Int64> Com.DanLiris.Service.DealTracking.Lib.Models.Activity::get_StageFromId()": {
+          "Lines": {
+            "35": 82
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Activity::get_StageFromName()": {
+          "Lines": {
+            "37": 82
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.Int64> Com.DanLiris.Service.DealTracking.Lib.Models.Activity::get_StageToId()": {
+          "Lines": {
+            "38": 82
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Activity::get_StageToName()": {
+          "Lines": {
+            "40": 82
+          },
+          "Branches": []
+        },
+        "System.Int64 Com.DanLiris.Service.DealTracking.Lib.Models.Activity::get_DealId()": {
+          "Lines": {
+            "42": 197
+          },
+          "Branches": []
+        },
+        "Com.DanLiris.Service.DealTracking.Lib.Models.Deal Com.DanLiris.Service.DealTracking.Lib.Models.Activity::get_Deal()": {
+          "Lines": {
+            "44": 90
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\Models\\ActivityAttachment.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.Models.ActivityAttachment": {
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.ActivityAttachment::get_FileName()": {
+          "Lines": {
+            "11": 51
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.ActivityAttachment::get_FilePath()": {
+          "Lines": {
+            "12": 52
+          },
+          "Branches": []
+        },
+        "System.Int64 Com.DanLiris.Service.DealTracking.Lib.Models.ActivityAttachment::get_ActivityId()": {
+          "Lines": {
+            "13": 161
+          },
+          "Branches": []
+        },
+        "Com.DanLiris.Service.DealTracking.Lib.Models.Activity Com.DanLiris.Service.DealTracking.Lib.Models.ActivityAttachment::get_Activity()": {
+          "Lines": {
+            "15": 65
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\Models\\Board.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.Models.Board": {
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Board::get_Code()": {
+          "Lines": {
+            "13": 145
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Board::get_Title()": {
+          "Lines": {
+            "15": 135
+          },
+          "Branches": []
+        },
+        "System.Int32 Com.DanLiris.Service.DealTracking.Lib.Models.Board::get_CurrencyId()": {
+          "Lines": {
+            "16": 129
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Board::get_CurrencyCode()": {
+          "Lines": {
+            "18": 129
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Board::get_CurrencySymbol()": {
+          "Lines": {
+            "20": 129
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.ICollection`1<Com.DanLiris.Service.DealTracking.Lib.Models.Stage> Com.DanLiris.Service.DealTracking.Lib.Models.Board::get_Stages()": {
+          "Lines": {
+            "21": 154
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\Models\\Company.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.Models.Company": {
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Company::get_Code()": {
+          "Lines": {
+            "12": 77
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Company::get_Name()": {
+          "Lines": {
+            "14": 67
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Company::get_Website()": {
+          "Lines": {
+            "16": 67
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Company::get_Industry()": {
+          "Lines": {
+            "18": 67
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Company::get_PhoneNumber()": {
+          "Lines": {
+            "20": 67
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Company::get_City()": {
+          "Lines": {
+            "22": 67
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Company::get_Information()": {
+          "Lines": {
+            "23": 59
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\Models\\Contact.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.Models.Contact": {
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Contact::get_Code()": {
+          "Lines": {
+            "13": 45
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Contact::get_Name()": {
+          "Lines": {
+            "15": 35
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Contact::get_Email()": {
+          "Lines": {
+            "17": 35
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Contact::get_PhoneNumber()": {
+          "Lines": {
+            "19": 35
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Contact::get_JobTitle()": {
+          "Lines": {
+            "21": 35
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Contact::get_Information()": {
+          "Lines": {
+            "22": 31
+          },
+          "Branches": []
+        },
+        "System.Int64 Com.DanLiris.Service.DealTracking.Lib.Models.Contact::get_CompanyId()": {
+          "Lines": {
+            "23": 93
+          },
+          "Branches": []
+        },
+        "Com.DanLiris.Service.DealTracking.Lib.Models.Company Com.DanLiris.Service.DealTracking.Lib.Models.Contact::get_Company()": {
+          "Lines": {
+            "25": 43
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\Models\\Deal.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.Models.Deal": {
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Deal::get_Code()": {
+          "Lines": {
+            "13": 207
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Deal::get_Name()": {
+          "Lines": {
+            "15": 197
+          },
+          "Branches": []
+        },
+        "System.Double Com.DanLiris.Service.DealTracking.Lib.Models.Deal::get_Amount()": {
+          "Lines": {
+            "16": 180
+          },
+          "Branches": []
+        },
+        "System.Double Com.DanLiris.Service.DealTracking.Lib.Models.Deal::get_Quantity()": {
+          "Lines": {
+            "17": 180
+          },
+          "Branches": []
+        },
+        "System.Int64 Com.DanLiris.Service.DealTracking.Lib.Models.Deal::get_CompanyId()": {
+          "Lines": {
+            "18": 164
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Deal::get_CompanyCode()": {
+          "Lines": {
+            "20": 164
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Deal::get_CompanyName()": {
+          "Lines": {
+            "22": 164
+          },
+          "Branches": []
+        },
+        "System.Int64 Com.DanLiris.Service.DealTracking.Lib.Models.Deal::get_ContactId()": {
+          "Lines": {
+            "23": 164
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Deal::get_ContactCode()": {
+          "Lines": {
+            "25": 164
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Deal::get_ContactName()": {
+          "Lines": {
+            "27": 164
+          },
+          "Branches": []
+        },
+        "System.DateTimeOffset Com.DanLiris.Service.DealTracking.Lib.Models.Deal::get_CloseDate()": {
+          "Lines": {
+            "28": 180
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Deal::get_Description()": {
+          "Lines": {
+            "29": 164
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Deal::get_Reason()": {
+          "Lines": {
+            "30": 164
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Deal::get_UomUnit()": {
+          "Lines": {
+            "31": 175
+          },
+          "Branches": []
+        },
+        "System.Int64 Com.DanLiris.Service.DealTracking.Lib.Models.Deal::get_StageId()": {
+          "Lines": {
+            "32": 550
+          },
+          "Branches": []
+        },
+        "Com.DanLiris.Service.DealTracking.Lib.Models.Stage Com.DanLiris.Service.DealTracking.Lib.Models.Deal::get_Stage()": {
+          "Lines": {
+            "34": 259
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\Models\\Reason.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.Models.Reason": {
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Reason::get_Code()": {
+          "Lines": {
+            "12": 49
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Reason::get_LoseReason()": {
+          "Lines": {
+            "14": 39
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\Models\\Stage.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.Models.Stage": {
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Stage::get_Code()": {
+          "Lines": {
+            "13": 132
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Stage::get_Name()": {
+          "Lines": {
+            "15": 122
+          },
+          "Branches": []
+        },
+        "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Stage::get_DealsOrder()": {
+          "Lines": {
+            "16": 139
+          },
+          "Branches": []
+        },
+        "System.Int64 Com.DanLiris.Service.DealTracking.Lib.Models.Stage::get_BoardId()": {
+          "Lines": {
+            "17": 333
+          },
+          "Branches": []
+        },
+        "Com.DanLiris.Service.DealTracking.Lib.Models.Board Com.DanLiris.Service.DealTracking.Lib.Models.Stage::get_Board()": {
+          "Lines": {
+            "19": 133
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.ICollection`1<Com.DanLiris.Service.DealTracking.Lib.Models.Deal> Com.DanLiris.Service.DealTracking.Lib.Models.Stage::get_Deals()": {
+          "Lines": {
+            "20": 186
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\BusinessLogic\\Implementation\\ActivityLogic.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Implementation.ActivityLogic": {
+        "System.Tuple`4<System.Collections.Generic.List`1<Com.DanLiris.Service.DealTracking.Lib.Models.Activity>,System.Int32,System.Collections.Generic.Dictionary`2<System.String,System.String>,System.Collections.Generic.List`1<System.String>> Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Implementation.ActivityLogic::Read(System.Int32,System.Int32,System.String,System.Collections.Generic.List`1<System.String>,System.String,System.String)": {
+          "Lines": {
+            "21": 1,
+            "22": 1,
+            "24": 1,
+            "25": 1,
+            "26": 1,
+            "27": 1,
+            "29": 1,
+            "31": 1,
+            "32": 1,
+            "34": 1,
+            "35": 1,
+            "36": 1,
+            "37": 1,
+            "39": 1,
+            "40": 1,
+            "41": 1,
+            "42": 1,
+            "43": 1,
+            "44": 1,
+            "45": 1,
+            "46": 1,
+            "47": 1,
+            "48": 1,
+            "49": 1,
+            "50": 1,
+            "51": 1,
+            "52": 1,
+            "53": 1,
+            "54": 1,
+            "55": 1,
+            "56": 1,
+            "57": 1,
+            "58": 1,
+            "60": 1,
+            "61": 1,
+            "63": 1,
+            "64": 1,
+            "66": 1,
+            "67": 1
+          },
+          "Branches": []
+        },
+        "System.Threading.Tasks.Task`1<Com.DanLiris.Service.DealTracking.Lib.Models.Activity> Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Implementation.ActivityLogic::ReadById(System.Int64)": {
+          "Lines": {
+            "70": 4,
+            "71": 4,
+            "72": 4,
+            "73": 4,
+            "74": 4
+          },
+          "Branches": []
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Implementation.ActivityLogic::.ctor(System.IServiceProvider,Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext)": {
+          "Lines": {
+            "16": 12,
+            "17": 12,
+            "18": 12
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\BusinessLogic\\Implementation\\BoardLogic.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Implementation.BoardLogic": {
+        "System.Tuple`4<System.Collections.Generic.List`1<Com.DanLiris.Service.DealTracking.Lib.Models.Board>,System.Int32,System.Collections.Generic.Dictionary`2<System.String,System.String>,System.Collections.Generic.List`1<System.String>> Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Implementation.BoardLogic::Read(System.Int32,System.Int32,System.String,System.Collections.Generic.List`1<System.String>,System.String,System.String)": {
+          "Lines": {
+            "19": 1,
+            "20": 1,
+            "22": 1,
+            "23": 1,
+            "24": 1,
+            "25": 1,
+            "27": 1,
+            "29": 1,
+            "30": 1,
+            "32": 1,
+            "33": 1,
+            "34": 1,
+            "35": 1,
+            "37": 1,
+            "38": 1,
+            "39": 1,
+            "40": 1,
+            "41": 1,
+            "42": 1,
+            "43": 1,
+            "44": 1,
+            "46": 1,
+            "47": 1,
+            "54": 1,
+            "55": 1,
+            "57": 1,
+            "58": 1
+          },
+          "Branches": []
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Implementation.BoardLogic::.ctor(System.IServiceProvider,Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext)": {
+          "Lines": {
+            "14": 5,
+            "15": 5,
+            "16": 5
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\BusinessLogic\\Implementation\\CompanyLogic.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Implementation.CompanyLogic": {
+        "System.Tuple`4<System.Collections.Generic.List`1<Com.DanLiris.Service.DealTracking.Lib.Models.Company>,System.Int32,System.Collections.Generic.Dictionary`2<System.String,System.String>,System.Collections.Generic.List`1<System.String>> Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Implementation.CompanyLogic::Read(System.Int32,System.Int32,System.String,System.Collections.Generic.List`1<System.String>,System.String,System.String)": {
+          "Lines": {
+            "19": 1,
+            "20": 1,
+            "22": 1,
+            "23": 1,
+            "24": 1,
+            "25": 1,
+            "27": 1,
+            "29": 1,
+            "30": 1,
+            "32": 1,
+            "33": 1,
+            "34": 1,
+            "35": 1,
+            "37": 1,
+            "38": 1,
+            "39": 1,
+            "40": 1,
+            "41": 1,
+            "42": 1,
+            "43": 1,
+            "44": 1,
+            "45": 1,
+            "46": 1,
+            "47": 1,
+            "48": 1,
+            "50": 1,
+            "51": 1,
+            "53": 1,
+            "54": 1,
+            "56": 1,
+            "57": 1
+          },
+          "Branches": []
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Implementation.CompanyLogic::.ctor(System.IServiceProvider,Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext)": {
+          "Lines": {
+            "14": 5,
+            "15": 5,
+            "16": 5
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\BusinessLogic\\Implementation\\ContactLogic.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Implementation.ContactLogic": {
+        "System.Tuple`4<System.Collections.Generic.List`1<Com.DanLiris.Service.DealTracking.Lib.Models.Contact>,System.Int32,System.Collections.Generic.Dictionary`2<System.String,System.String>,System.Collections.Generic.List`1<System.String>> Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Implementation.ContactLogic::Read(System.Int32,System.Int32,System.String,System.Collections.Generic.List`1<System.String>,System.String,System.String)": {
+          "Lines": {
+            "21": 1,
+            "22": 1,
+            "24": 1,
+            "25": 1,
+            "26": 1,
+            "27": 1,
+            "29": 1,
+            "31": 1,
+            "32": 1,
+            "34": 1,
+            "35": 1,
+            "36": 1,
+            "37": 1,
+            "39": 1,
+            "40": 1,
+            "41": 1,
+            "42": 1,
+            "43": 1,
+            "44": 1,
+            "45": 1,
+            "46": 1,
+            "47": 1,
+            "48": 1,
+            "49": 1,
+            "50": 1,
+            "52": 1,
+            "53": 1,
+            "55": 1,
+            "56": 1,
+            "58": 1,
+            "59": 1
+          },
+          "Branches": []
+        },
+        "System.Threading.Tasks.Task`1<Com.DanLiris.Service.DealTracking.Lib.Models.Contact> Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Implementation.ContactLogic::ReadById(System.Int64)": {
+          "Lines": {
+            "62": 2,
+            "63": 2,
+            "64": 2,
+            "65": 2,
+            "66": 2
+          },
+          "Branches": []
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Implementation.ContactLogic::.ctor(System.IServiceProvider,Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext)": {
+          "Lines": {
+            "16": 5,
+            "17": 5,
+            "18": 5
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\BusinessLogic\\Implementation\\DealLogic.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Implementation.DealLogic": {
+        "System.Tuple`4<System.Collections.Generic.List`1<Com.DanLiris.Service.DealTracking.Lib.Models.Deal>,System.Int32,System.Collections.Generic.Dictionary`2<System.String,System.String>,System.Collections.Generic.List`1<System.String>> Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Implementation.DealLogic::Read(System.Int32,System.Int32,System.String,System.Collections.Generic.List`1<System.String>,System.String,System.String)": {
+          "Lines": {
+            "19": 1,
+            "20": 1,
+            "22": 1,
+            "23": 1,
+            "24": 1,
+            "25": 1,
+            "27": 1,
+            "29": 1,
+            "30": 1,
+            "32": 1,
+            "33": 1,
+            "34": 1,
+            "35": 1,
+            "37": 1,
+            "38": 1,
+            "39": 1,
+            "40": 1,
+            "41": 1,
+            "42": 1,
+            "43": 1,
+            "44": 1,
+            "45": 1,
+            "46": 1,
+            "47": 1,
+            "48": 1,
+            "50": 1,
+            "51": 1,
+            "58": 1,
+            "59": 1,
+            "61": 1,
+            "62": 1
+          },
+          "Branches": []
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Implementation.DealLogic::.ctor(System.IServiceProvider,Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext)": {
+          "Lines": {
+            "14": 5,
+            "15": 5,
+            "16": 5
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\BusinessLogic\\Implementation\\ReasonLogic.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Implementation.ReasonLogic": {
+        "System.Tuple`4<System.Collections.Generic.List`1<Com.DanLiris.Service.DealTracking.Lib.Models.Reason>,System.Int32,System.Collections.Generic.Dictionary`2<System.String,System.String>,System.Collections.Generic.List`1<System.String>> Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Implementation.ReasonLogic::Read(System.Int32,System.Int32,System.String,System.Collections.Generic.List`1<System.String>,System.String,System.String)": {
+          "Lines": {
+            "19": 1,
+            "20": 1,
+            "22": 1,
+            "23": 1,
+            "24": 1,
+            "25": 1,
+            "27": 1,
+            "29": 1,
+            "30": 1,
+            "32": 1,
+            "33": 1,
+            "34": 1,
+            "35": 1,
+            "37": 1,
+            "38": 1,
+            "39": 1,
+            "40": 1,
+            "41": 1,
+            "42": 1,
+            "43": 1,
+            "44": 1,
+            "46": 1,
+            "47": 1,
+            "49": 1,
+            "50": 1,
+            "52": 1,
+            "53": 1
+          },
+          "Branches": []
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Implementation.ReasonLogic::.ctor(System.IServiceProvider,Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext)": {
+          "Lines": {
+            "14": 5,
+            "15": 5,
+            "16": 5
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\BusinessLogic\\Implementation\\StageLogic.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Implementation.StageLogic": {
+        "System.Tuple`4<System.Collections.Generic.List`1<Com.DanLiris.Service.DealTracking.Lib.Models.Stage>,System.Int32,System.Collections.Generic.Dictionary`2<System.String,System.String>,System.Collections.Generic.List`1<System.String>> Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Implementation.StageLogic::Read(System.Int32,System.Int32,System.String,System.Collections.Generic.List`1<System.String>,System.String,System.String)": {
+          "Lines": {
+            "19": 1,
+            "20": 1,
+            "22": 1,
+            "23": 1,
+            "24": 1,
+            "25": 1,
+            "27": 1,
+            "29": 1,
+            "30": 1,
+            "32": 1,
+            "33": 1,
+            "34": 1,
+            "35": 1,
+            "37": 1,
+            "38": 1,
+            "39": 1,
+            "40": 1,
+            "41": 1,
+            "42": 1,
+            "43": 1,
+            "44": 1,
+            "45": 1,
+            "46": 1,
+            "47": 1,
+            "48": 1,
+            "50": 1,
+            "51": 1,
+            "58": 1,
+            "59": 1,
+            "61": 1,
+            "62": 1
+          },
+          "Branches": []
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Implementation.StageLogic::UpdateDealsOrder(System.Int64,System.String)": {
+          "Lines": {
+            "65": 0,
+            "66": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0
+          },
+          "Branches": []
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Implementation.StageLogic::UpdateDealsOrderCreate(System.Int64,System.Int64)": {
+          "Lines": {
+            "73": 5,
+            "74": 5,
+            "76": 5,
+            "77": 5,
+            "78": 5,
+            "79": 5,
+            "80": 5,
+            "81": 5,
+            "83": 0,
+            "84": 0,
+            "85": 0,
+            "87": 5,
+            "88": 5
+          },
+          "Branches": [
+            {
+              "Line": 76,
+              "Offset": 159,
+              "EndOffset": 161,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 5
+            },
+            {
+              "Line": 76,
+              "Offset": 159,
+              "EndOffset": 268,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Implementation.StageLogic::UpdateDealsOrderDelete(System.Int64,System.Int64)": {
+          "Lines": {
+            "91": 1,
+            "92": 1,
+            "94": 1,
+            "95": 3,
+            "96": 1,
+            "98": 1,
+            "99": 1,
+            "100": 1,
+            "101": 1,
+            "103": 0,
+            "104": 0,
+            "105": 0,
+            "107": 1,
+            "108": 1
+          },
+          "Branches": [
+            {
+              "Line": 98,
+              "Offset": 251,
+              "EndOffset": 253,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 98,
+              "Offset": 251,
+              "EndOffset": 290,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Implementation.StageLogic::.ctor(System.IServiceProvider,Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext)": {
+          "Lines": {
+            "14": 10,
+            "15": 10,
+            "16": 10
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\BusinessLogic\\Facades\\ActivityFacade.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.ActivityFacade": {
+        "System.Tuple`4<System.Collections.Generic.List`1<Com.DanLiris.Service.DealTracking.Lib.Models.Activity>,System.Int32,System.Collections.Generic.Dictionary`2<System.String,System.String>,System.Collections.Generic.List`1<System.String>> Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.ActivityFacade::Read(System.Int32,System.Int32,System.String,System.Collections.Generic.List`1<System.String>,System.String,System.String)": {
+          "Lines": {
+            "57": 1,
+            "58": 1,
+            "59": 1
+          },
+          "Branches": []
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.ActivityFacade::.ctor(System.IServiceProvider,Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext)": {
+          "Lines": {
+            "25": 7,
+            "26": 7,
+            "27": 7,
+            "28": 7,
+            "29": 7,
+            "30": 7,
+            "31": 7,
+            "32": 7,
+            "34": 7
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.ActivityFacade/<Create>d__7": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.ActivityFacade/<Create>d__7::MoveNext()": {
+          "Lines": {
+            "37": 7,
+            "39": 7,
+            "40": 7,
+            "41": 7,
+            "42": 7,
+            "44": 7,
+            "45": 7,
+            "46": 35,
+            "47": 7,
+            "48": 7,
+            "49": 7,
+            "50": 7,
+            "52": 7,
+            "53": 7,
+            "54": 7
+          },
+          "Branches": [
+            {
+              "Line": 42,
+              "Offset": 230,
+              "EndOffset": 46,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 7
+            },
+            {
+              "Line": 42,
+              "Offset": 230,
+              "EndOffset": 235,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 7
+            },
+            {
+              "Line": 44,
+              "Offset": 263,
+              "EndOffset": 268,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 7
+            },
+            {
+              "Line": 46,
+              "Offset": 369,
+              "EndOffset": 299,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 7
+            },
+            {
+              "Line": 46,
+              "Offset": 369,
+              "EndOffset": 371,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 7
+            },
+            {
+              "Line": 44,
+              "Offset": 263,
+              "EndOffset": 406,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 7
+            }
+          ]
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.ActivityFacade/<ReadById>d__9": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.ActivityFacade/<ReadById>d__9::MoveNext()": {
+          "Lines": {
+            "62": 1,
+            "63": 1,
+            "64": 1
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.ActivityFacade/<Update>d__10": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.ActivityFacade/<Update>d__10::MoveNext()": {
+          "Lines": {
+            "67": 1,
+            "68": 1,
+            "69": 1,
+            "70": 1
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.ActivityFacade/<Delete>d__11": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.ActivityFacade/<Delete>d__11::MoveNext()": {
+          "Lines": {
+            "73": 1,
+            "75": 1,
+            "77": 1,
+            "78": 1,
+            "79": 5,
+            "80": 1,
+            "82": 1,
+            "83": 1,
+            "84": 1,
+            "86": 1,
+            "87": 1,
+            "88": 1
+          },
+          "Branches": [
+            {
+              "Line": 77,
+              "Offset": 203,
+              "EndOffset": 208,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 79,
+              "Offset": 408,
+              "EndOffset": 246,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1
+            },
+            {
+              "Line": 79,
+              "Offset": 408,
+              "EndOffset": 413,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 77,
+              "Offset": 203,
+              "EndOffset": 448,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.ActivityFacade/<DeleteAttachment>d__12": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.ActivityFacade/<DeleteAttachment>d__12::MoveNext()": {
+          "Lines": {
+            "91": 1,
+            "92": 1,
+            "93": 1,
+            "94": 1,
+            "96": 1,
+            "97": 1
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.ActivityFacade/<CreateAttachment>d__13": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.ActivityFacade/<CreateAttachment>d__13::MoveNext()": {
+          "Lines": {
+            "100": 1,
+            "101": 5,
+            "102": 1,
+            "103": 1,
+            "104": 1,
+            "105": 1,
+            "106": 1,
+            "108": 1,
+            "109": 1
+          },
+          "Branches": [
+            {
+              "Line": 101,
+              "Offset": 154,
+              "EndOffset": 38,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            },
+            {
+              "Line": 101,
+              "Offset": 154,
+              "EndOffset": 156,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\BusinessLogic\\Facades\\BoardFacade.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.BoardFacade": {
+        "System.Tuple`4<System.Collections.Generic.List`1<Com.DanLiris.Service.DealTracking.Lib.Models.Board>,System.Int32,System.Collections.Generic.Dictionary`2<System.String,System.String>,System.Collections.Generic.List`1<System.String>> Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.BoardFacade::Read(System.Int32,System.Int32,System.String,System.Collections.Generic.List`1<System.String>,System.String,System.String)": {
+          "Lines": {
+            "43": 1,
+            "44": 1,
+            "45": 1
+          },
+          "Branches": []
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.BoardFacade::.ctor(System.IServiceProvider,Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext)": {
+          "Lines": {
+            "22": 5,
+            "23": 5,
+            "24": 5,
+            "25": 5,
+            "26": 5,
+            "27": 5,
+            "28": 5
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.BoardFacade/<Create>d__5": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.BoardFacade/<Create>d__5::MoveNext()": {
+          "Lines": {
+            "31": 5,
+            "33": 5,
+            "34": 5,
+            "35": 5,
+            "36": 5,
+            "38": 5,
+            "39": 5,
+            "40": 5
+          },
+          "Branches": [
+            {
+              "Line": 36,
+              "Offset": 230,
+              "EndOffset": 46,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 5
+            },
+            {
+              "Line": 36,
+              "Offset": 230,
+              "EndOffset": 235,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 5
+            }
+          ]
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.BoardFacade/<ReadById>d__7": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.BoardFacade/<ReadById>d__7::MoveNext()": {
+          "Lines": {
+            "48": 1,
+            "49": 1,
+            "50": 1
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.BoardFacade/<Update>d__8": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.BoardFacade/<Update>d__8::MoveNext()": {
+          "Lines": {
+            "53": 1,
+            "54": 1,
+            "55": 1,
+            "56": 1
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.BoardFacade/<Delete>d__9": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.BoardFacade/<Delete>d__9::MoveNext()": {
+          "Lines": {
+            "59": 1,
+            "60": 1,
+            "61": 1,
+            "62": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\BusinessLogic\\Facades\\CompanyFacade.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.CompanyFacade": {
+        "System.Tuple`4<System.Collections.Generic.List`1<Com.DanLiris.Service.DealTracking.Lib.Models.Company>,System.Int32,System.Collections.Generic.Dictionary`2<System.String,System.String>,System.Collections.Generic.List`1<System.String>> Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.CompanyFacade::Read(System.Int32,System.Int32,System.String,System.Collections.Generic.List`1<System.String>,System.String,System.String)": {
+          "Lines": {
+            "43": 1,
+            "44": 1,
+            "45": 1
+          },
+          "Branches": []
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.CompanyFacade::.ctor(System.IServiceProvider,Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext)": {
+          "Lines": {
+            "22": 5,
+            "23": 5,
+            "24": 5,
+            "25": 5,
+            "26": 5,
+            "27": 5,
+            "28": 5
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.CompanyFacade/<Create>d__5": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.CompanyFacade/<Create>d__5::MoveNext()": {
+          "Lines": {
+            "31": 5,
+            "33": 5,
+            "34": 5,
+            "35": 5,
+            "36": 5,
+            "38": 5,
+            "39": 5,
+            "40": 5
+          },
+          "Branches": [
+            {
+              "Line": 36,
+              "Offset": 230,
+              "EndOffset": 46,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 5
+            },
+            {
+              "Line": 36,
+              "Offset": 230,
+              "EndOffset": 235,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 5
+            }
+          ]
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.CompanyFacade/<ReadById>d__7": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.CompanyFacade/<ReadById>d__7::MoveNext()": {
+          "Lines": {
+            "48": 1,
+            "49": 1,
+            "50": 1
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.CompanyFacade/<Update>d__8": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.CompanyFacade/<Update>d__8::MoveNext()": {
+          "Lines": {
+            "53": 1,
+            "54": 1,
+            "55": 1,
+            "56": 1
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.CompanyFacade/<Delete>d__9": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.CompanyFacade/<Delete>d__9::MoveNext()": {
+          "Lines": {
+            "59": 1,
+            "60": 1,
+            "61": 1,
+            "62": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\BusinessLogic\\Facades\\ContactFacade.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.ContactFacade": {
+        "System.Tuple`4<System.Collections.Generic.List`1<Com.DanLiris.Service.DealTracking.Lib.Models.Contact>,System.Int32,System.Collections.Generic.Dictionary`2<System.String,System.String>,System.Collections.Generic.List`1<System.String>> Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.ContactFacade::Read(System.Int32,System.Int32,System.String,System.Collections.Generic.List`1<System.String>,System.String,System.String)": {
+          "Lines": {
+            "46": 1,
+            "47": 1,
+            "48": 1
+          },
+          "Branches": []
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.ContactFacade::.ctor(System.IServiceProvider,Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext)": {
+          "Lines": {
+            "22": 5,
+            "23": 5,
+            "24": 5,
+            "25": 5,
+            "26": 5,
+            "27": 5,
+            "28": 5
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.ContactFacade/<Create>d__5": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.ContactFacade/<Create>d__5::MoveNext()": {
+          "Lines": {
+            "31": 5,
+            "33": 5,
+            "34": 5,
+            "35": 5,
+            "36": 5,
+            "41": 5,
+            "42": 5,
+            "43": 5
+          },
+          "Branches": [
+            {
+              "Line": 36,
+              "Offset": 230,
+              "EndOffset": 46,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 5
+            },
+            {
+              "Line": 36,
+              "Offset": 230,
+              "EndOffset": 235,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 5
+            }
+          ]
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.ContactFacade/<ReadById>d__7": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.ContactFacade/<ReadById>d__7::MoveNext()": {
+          "Lines": {
+            "51": 1,
+            "52": 1,
+            "53": 1
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.ContactFacade/<Update>d__8": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.ContactFacade/<Update>d__8::MoveNext()": {
+          "Lines": {
+            "56": 1,
+            "58": 1,
+            "59": 1,
+            "60": 1
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.ContactFacade/<Delete>d__9": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.ContactFacade/<Delete>d__9::MoveNext()": {
+          "Lines": {
+            "63": 1,
+            "64": 1,
+            "65": 1,
+            "66": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\BusinessLogic\\Facades\\DealFacade.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.DealFacade": {
+        "System.Tuple`4<System.Collections.Generic.List`1<Com.DanLiris.Service.DealTracking.Lib.Models.Deal>,System.Int32,System.Collections.Generic.Dictionary`2<System.String,System.String>,System.Collections.Generic.List`1<System.String>> Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.DealFacade::Read(System.Int32,System.Int32,System.String,System.Collections.Generic.List`1<System.String>,System.String,System.String)": {
+          "Lines": {
+            "82": 1,
+            "83": 1,
+            "84": 1
+          },
+          "Branches": []
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.DealFacade::.ctor(System.IServiceProvider,Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext)": {
+          "Lines": {
+            "26": 5,
+            "27": 5,
+            "28": 5,
+            "29": 5,
+            "30": 5,
+            "31": 5,
+            "32": 5,
+            "33": 5,
+            "34": 5,
+            "35": 5
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.DealFacade/<Create>d__8": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.DealFacade/<Create>d__8::MoveNext()": {
+          "Lines": {
+            "38": 5,
+            "39": 5,
+            "41": 5,
+            "42": 5,
+            "44": 5,
+            "46": 5,
+            "47": 5,
+            "48": 5,
+            "49": 5,
+            "50": 5,
+            "52": 5,
+            "55": 5,
+            "56": 5,
+            "57": 5,
+            "58": 5,
+            "59": 5,
+            "61": 5,
+            "62": 5,
+            "63": 5,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "75": 5,
+            "76": 5,
+            "78": 5,
+            "79": 5
+          },
+          "Branches": [
+            {
+              "Line": 49,
+              "Offset": 306,
+              "EndOffset": 122,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 5
+            },
+            {
+              "Line": 49,
+              "Offset": 306,
+              "EndOffset": 311,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 5
+            },
+            {
+              "Line": 58,
+              "Offset": 627,
+              "EndOffset": 436,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 5
+            },
+            {
+              "Line": 58,
+              "Offset": 627,
+              "EndOffset": 632,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 5
+            }
+          ]
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.DealFacade/<ReadById>d__10": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.DealFacade/<ReadById>d__10::MoveNext()": {
+          "Lines": {
+            "87": 1,
+            "88": 1,
+            "89": 1
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.DealFacade/<Update>d__11": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.DealFacade/<Update>d__11::MoveNext()": {
+          "Lines": {
+            "92": 1,
+            "93": 1,
+            "94": 1,
+            "95": 1
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.DealFacade/<Delete>d__12": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.DealFacade/<Delete>d__12::MoveNext()": {
+          "Lines": {
+            "98": 1,
+            "99": 1,
+            "101": 1,
+            "102": 1,
+            "103": 1,
+            "105": 1,
+            "107": 5,
+            "108": 1,
+            "109": 1,
+            "110": 1,
+            "112": 1,
+            "113": 1,
+            "115": 1,
+            "117": 1,
+            "118": 1
+          },
+          "Branches": [
+            {
+              "Line": 107,
+              "Offset": 517,
+              "EndOffset": 453,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            },
+            {
+              "Line": 107,
+              "Offset": 517,
+              "EndOffset": 519,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            }
+          ]
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.DealFacade/<MoveActivity>d__13": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.DealFacade/<MoveActivity>d__13::MoveNext()": {
+          "Lines": {
+            "121": 0,
+            "122": 0,
+            "124": 0,
+            "125": 0,
+            "127": 0,
+            "131": 0,
+            "132": 0,
+            "133": 0,
+            "135": 0,
+            "136": 0,
+            "138": 0,
+            "139": 0,
+            "140": 0,
+            "142": 0,
+            "143": 0,
+            "144": 0,
+            "145": 0,
+            "146": 0,
+            "147": 0,
+            "148": 0,
+            "149": 0,
+            "150": 0,
+            "151": 0,
+            "152": 0,
+            "155": 0,
+            "156": 0,
+            "157": 0,
+            "158": 0,
+            "159": 0,
+            "161": 0,
+            "162": 0,
+            "164": 0,
+            "165": 0,
+            "166": 0,
+            "167": 0,
+            "168": 0,
+            "170": 0,
+            "171": 0,
+            "172": 0,
+            "173": 0,
+            "176": 0,
+            "177": 0,
+            "179": 0,
+            "180": 0
+          },
+          "Branches": [
+            {
+              "Line": 127,
+              "Offset": 142,
+              "EndOffset": 147,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 127,
+              "Offset": 165,
+              "EndOffset": 167,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 127,
+              "Offset": 165,
+              "EndOffset": 188,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 127,
+              "Offset": 178,
+              "EndOffset": 369,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 158,
+              "Offset": 1090,
+              "EndOffset": 896,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 158,
+              "Offset": 1090,
+              "EndOffset": 1095,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 127,
+              "Offset": 142,
+              "EndOffset": 1262,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 127,
+              "Offset": 178,
+              "EndOffset": 1262,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\BusinessLogic\\Facades\\ReasonFacade.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.ReasonFacade": {
+        "System.Tuple`4<System.Collections.Generic.List`1<Com.DanLiris.Service.DealTracking.Lib.Models.Reason>,System.Int32,System.Collections.Generic.Dictionary`2<System.String,System.String>,System.Collections.Generic.List`1<System.String>> Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.ReasonFacade::Read(System.Int32,System.Int32,System.String,System.Collections.Generic.List`1<System.String>,System.String,System.String)": {
+          "Lines": {
+            "43": 1,
+            "44": 1,
+            "45": 1
+          },
+          "Branches": []
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.ReasonFacade::.ctor(System.IServiceProvider,Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext)": {
+          "Lines": {
+            "22": 5,
+            "23": 5,
+            "24": 5,
+            "25": 5,
+            "26": 5,
+            "27": 5,
+            "28": 5
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.ReasonFacade/<Create>d__5": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.ReasonFacade/<Create>d__5::MoveNext()": {
+          "Lines": {
+            "31": 5,
+            "33": 5,
+            "34": 5,
+            "35": 5,
+            "36": 5,
+            "38": 5,
+            "39": 5,
+            "40": 5
+          },
+          "Branches": [
+            {
+              "Line": 36,
+              "Offset": 230,
+              "EndOffset": 46,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 5
+            },
+            {
+              "Line": 36,
+              "Offset": 230,
+              "EndOffset": 235,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 5
+            }
+          ]
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.ReasonFacade/<ReadById>d__7": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.ReasonFacade/<ReadById>d__7::MoveNext()": {
+          "Lines": {
+            "48": 1,
+            "49": 1,
+            "50": 1
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.ReasonFacade/<Update>d__8": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.ReasonFacade/<Update>d__8::MoveNext()": {
+          "Lines": {
+            "53": 1,
+            "54": 1,
+            "55": 1,
+            "56": 1
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.ReasonFacade/<Delete>d__9": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.ReasonFacade/<Delete>d__9::MoveNext()": {
+          "Lines": {
+            "59": 1,
+            "60": 1,
+            "61": 1,
+            "62": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\BusinessLogic\\Facades\\StageFacade.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.StageFacade": {
+        "System.Tuple`4<System.Collections.Generic.List`1<Com.DanLiris.Service.DealTracking.Lib.Models.Stage>,System.Int32,System.Collections.Generic.Dictionary`2<System.String,System.String>,System.Collections.Generic.List`1<System.String>> Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.StageFacade::Read(System.Int32,System.Int32,System.String,System.Collections.Generic.List`1<System.String>,System.String,System.String)": {
+          "Lines": {
+            "43": 1,
+            "44": 1,
+            "45": 1
+          },
+          "Branches": []
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.StageFacade::.ctor(System.IServiceProvider,Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext)": {
+          "Lines": {
+            "22": 10,
+            "23": 10,
+            "24": 10,
+            "25": 10,
+            "26": 10,
+            "27": 10,
+            "28": 10
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.StageFacade/<Create>d__5": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.StageFacade/<Create>d__5::MoveNext()": {
+          "Lines": {
+            "31": 5,
+            "33": 5,
+            "34": 5,
+            "35": 5,
+            "36": 5,
+            "38": 5,
+            "39": 5,
+            "40": 5
+          },
+          "Branches": [
+            {
+              "Line": 36,
+              "Offset": 230,
+              "EndOffset": 46,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 5
+            },
+            {
+              "Line": 36,
+              "Offset": 230,
+              "EndOffset": 235,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 5
+            }
+          ]
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.StageFacade/<ReadById>d__7": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.StageFacade/<ReadById>d__7::MoveNext()": {
+          "Lines": {
+            "48": 1,
+            "49": 1,
+            "50": 1
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.StageFacade/<Update>d__8": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.StageFacade/<Update>d__8::MoveNext()": {
+          "Lines": {
+            "53": 1,
+            "54": 1,
+            "55": 1,
+            "56": 1
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.StageFacade/<Delete>d__9": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.StageFacade/<Delete>d__9::MoveNext()": {
+          "Lines": {
+            "59": 1,
+            "60": 1,
+            "61": 1,
+            "62": 1
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.StageFacade/<UpdateDealsOrderCreate>d__10": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.StageFacade/<UpdateDealsOrderCreate>d__10::MoveNext()": {
+          "Lines": {
+            "65": 5,
+            "66": 5,
+            "67": 5,
+            "68": 5
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\AutoMapperProfiles\\ActivityProfile.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.AutoMapperProfiles.ActivityProfile": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.AutoMapperProfiles.ActivityProfile::.ctor()": {
+          "Lines": {
+            "12": 1,
+            "13": 1,
+            "14": 1,
+            "15": 1,
+            "16": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\AutoMapperProfiles\\BoardProfile.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.AutoMapperProfiles.BoardProfile": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.AutoMapperProfiles.BoardProfile::.ctor()": {
+          "Lines": {
+            "12": 1,
+            "13": 1,
+            "14": 1,
+            "15": 2,
+            "16": 2,
+            "17": 2,
+            "18": 1,
+            "19": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\AutoMapperProfiles\\DealProfile.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.AutoMapperProfiles.DealProfile": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.AutoMapperProfiles.DealProfile::.ctor()": {
+          "Lines": {
+            "12": 1,
+            "13": 1,
+            "14": 1,
+            "15": 2,
+            "16": 2,
+            "17": 2,
+            "18": 2,
+            "19": 2,
+            "20": 2,
+            "21": 2,
+            "22": 1,
+            "24": 1,
+            "25": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\AutoMapperProfiles\\MasterProfile.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.AutoMapperProfiles.MasterProfile": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.AutoMapperProfiles.MasterProfile::.ctor()": {
+          "Lines": {
+            "12": 1,
+            "13": 1,
+            "14": 1,
+            "16": 1,
+            "17": 2,
+            "18": 2,
+            "19": 1,
+            "21": 1,
+            "22": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.Lib\\AutoMapperProfiles\\StageProfile.cs": {
+      "Com.DanLiris.Service.DealTracking.Lib.AutoMapperProfiles.StageProfile": {
+        "System.Void Com.DanLiris.Service.DealTracking.Lib.AutoMapperProfiles.StageProfile::.ctor()": {
+          "Lines": {
+            "12": 1,
+            "13": 1,
+            "14": 1,
+            "15": 1,
+            "16": 1
+          },
+          "Branches": []
+        }
+      }
+    }
+  },
+  "Com.DanLiris.Service.DealTracking.WebApi.dll": {
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.WebApi\\Program.cs": {
+      "Com.DanLiris.Service.DealTracking.Program": {
+        "System.Void Com.DanLiris.Service.DealTracking.Program::Main(System.String[])": {
+          "Lines": {
+            "9": 0,
+            "10": 0,
+            "11": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.AspNetCore.Hosting.IWebHost Com.DanLiris.Service.DealTracking.Program::BuildWebHost(System.String[])": {
+          "Lines": {
+            "14": 0,
+            "15": 0,
+            "16": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.WebApi\\Startup.cs": {
+      "Com.DanLiris.Service.DealTracking.Startup": {
+        "System.Void Com.DanLiris.Service.DealTracking.Startup::RegisterFacades(Microsoft.Extensions.DependencyInjection.IServiceCollection)": {
+          "Lines": {
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0
+          },
+          "Branches": []
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.Startup::RegisterLogic(Microsoft.Extensions.DependencyInjection.IServiceCollection)": {
+          "Lines": {
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0
+          },
+          "Branches": []
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.Startup::RegisterServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)": {
+          "Lines": {
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.Extensions.Configuration.IConfiguration Com.DanLiris.Service.DealTracking.Startup::get_Configuration()": {
+          "Lines": {
+            "71": 0
+          },
+          "Branches": []
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.Startup::ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)": {
+          "Lines": {
+            "74": 0,
+            "75": 0,
+            "78": 0,
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "82": 0,
+            "85": 0,
+            "88": 0,
+            "89": 0,
+            "91": 0,
+            "92": 0,
+            "93": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "97": 0,
+            "98": 0,
+            "99": 0,
+            "100": 0,
+            "101": 0,
+            "104": 0,
+            "105": 0,
+            "106": 0,
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "110": 0,
+            "113": 0,
+            "114": 0,
+            "115": 0,
+            "116": 0,
+            "117": 0,
+            "118": 0,
+            "121": 0,
+            "122": 0,
+            "123": 0,
+            "124": 0,
+            "125": 0,
+            "126": 0,
+            "127": 0,
+            "128": 0,
+            "129": 0,
+            "130": 0,
+            "131": 0,
+            "132": 0,
+            "133": 0,
+            "134": 0,
+            "135": 0,
+            "136": 0,
+            "137": 0,
+            "138": 0,
+            "139": 0,
+            "141": 0
+          },
+          "Branches": [
+            {
+              "Line": 75,
+              "Offset": 32,
+              "EndOffset": 34,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 75,
+              "Offset": 32,
+              "EndOffset": 51,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 88,
+              "Offset": 163,
+              "EndOffset": 165,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 88,
+              "Offset": 163,
+              "EndOffset": 182,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 19,
+              "EndOffset": 21,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 19,
+              "EndOffset": 43,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.Startup::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)": {
+          "Lines": {
+            "144": 0,
+            "145": 0,
+            "146": 0,
+            "147": 0,
+            "148": 0,
+            "151": 0,
+            "152": 0,
+            "153": 0,
+            "154": 0,
+            "155": 0,
+            "157": 0,
+            "158": 0,
+            "159": 0,
+            "160": 0,
+            "161": 0,
+            "162": 0,
+            "163": 0,
+            "164": 0,
+            "165": 0
+          },
+          "Branches": [
+            {
+              "Line": 145,
+              "Offset": 9,
+              "EndOffset": 11,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 145,
+              "Offset": 9,
+              "EndOffset": 20,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.Startup::.ctor(Microsoft.Extensions.Configuration.IConfiguration)": {
+          "Lines": {
+            "26": 0,
+            "27": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.WebApi\\Utilities\\BaseController.cs": {
+      "Com.DanLiris.Service.DealTracking.WebApi.Utilities.BaseController`3": {
+        "System.Void Com.DanLiris.Service.DealTracking.WebApi.Utilities.BaseController`3::ValidateUser()": {
+          "Lines": {
+            "37": 42,
+            "38": 84,
+            "39": 42,
+            "40": 42
+          },
+          "Branches": [
+            {
+              "Line": 38,
+              "Offset": 24,
+              "EndOffset": 26,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 6
+            },
+            {
+              "Line": 38,
+              "Offset": 24,
+              "EndOffset": 49,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 42
+            }
+          ]
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.WebApi.Utilities.BaseController`3::ValidateViewModel(TViewModel)": {
+          "Lines": {
+            "43": 24,
+            "44": 24,
+            "45": 18
+          },
+          "Branches": []
+        },
+        "Microsoft.AspNetCore.Mvc.IActionResult Com.DanLiris.Service.DealTracking.WebApi.Utilities.BaseController`3::Get(System.Int32,System.Int32,System.String,System.Collections.Generic.List`1<System.String>,System.String,System.String)": {
+          "Lines": {
+            "49": 12,
+            "51": 12,
+            "52": 12,
+            "53": 12,
+            "54": 6,
+            "56": 6,
+            "57": 6,
+            "58": 6,
+            "59": 6,
+            "61": 6,
+            "62": 6,
+            "63": 6,
+            "64": 6,
+            "65": 6,
+            "66": 6,
+            "68": 12
+          },
+          "Branches": []
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.WebApi.Utilities.BaseController`3::.ctor(AutoMapper.IMapper,Com.DanLiris.Service.DealTracking.Lib.Services.IIdentityService,Com.DanLiris.Service.DealTracking.Lib.Services.IValidateService,TFacade,System.String)": {
+          "Lines": {
+            "27": 48,
+            "28": 48,
+            "29": 48,
+            "30": 48,
+            "31": 48,
+            "32": 48,
+            "33": 48,
+            "34": 48
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.WebApi.Utilities.BaseController`3/<Post>d__9": {
+        "System.Void Com.DanLiris.Service.DealTracking.WebApi.Utilities.BaseController`3/<Post>d__9::MoveNext()": {
+          "Lines": {
+            "72": 18,
+            "73": 18,
+            "74": 0,
+            "75": 0,
+            "79": 18,
+            "80": 18,
+            "81": 18,
+            "83": 12,
+            "84": 12,
+            "86": 6,
+            "87": 6,
+            "88": 6,
+            "89": 6,
+            "93": 6,
+            "94": 6,
+            "95": 6,
+            "96": 6,
+            "97": 6,
+            "98": 6,
+            "100": 6,
+            "101": 6,
+            "102": 6,
+            "103": 6,
+            "104": 6,
+            "105": 6,
+            "107": 18
+          },
+          "Branches": [
+            {
+              "Line": 73,
+              "Offset": 36,
+              "EndOffset": 38,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 73,
+              "Offset": 36,
+              "EndOffset": 67,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 18
+            }
+          ]
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.WebApi.Utilities.BaseController`3/<GetById>d__10": {
+        "System.Void Com.DanLiris.Service.DealTracking.WebApi.Utilities.BaseController`3/<GetById>d__10::MoveNext()": {
+          "Lines": {
+            "111": 6,
+            "113": 6,
+            "114": 6,
+            "116": 6,
+            "117": 6,
+            "118": 6,
+            "119": 6,
+            "120": 6,
+            "121": 6,
+            "124": 0,
+            "125": 0,
+            "126": 0,
+            "127": 0,
+            "128": 0,
+            "129": 0,
+            "132": 0,
+            "133": 0,
+            "134": 0,
+            "135": 0,
+            "136": 0,
+            "137": 0,
+            "139": 6
+          },
+          "Branches": [
+            {
+              "Line": 116,
+              "Offset": 194,
+              "EndOffset": 196,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 6
+            },
+            {
+              "Line": 116,
+              "Offset": 194,
+              "EndOffset": 257,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.WebApi.Utilities.BaseController`3/<Put>d__11": {
+        "System.Void Com.DanLiris.Service.DealTracking.WebApi.Utilities.BaseController`3/<Put>d__11::MoveNext()": {
+          "Lines": {
+            "143": 6,
+            "144": 6,
+            "145": 0,
+            "146": 0,
+            "150": 6,
+            "151": 6,
+            "152": 6,
+            "154": 6,
+            "156": 6,
+            "157": 0,
+            "158": 0,
+            "159": 0,
+            "160": 0,
+            "161": 0,
+            "164": 0,
+            "166": 0,
+            "168": 0,
+            "169": 0,
+            "170": 0,
+            "171": 0,
+            "172": 0,
+            "173": 0,
+            "175": 0,
+            "176": 0,
+            "177": 0,
+            "178": 0,
+            "179": 0,
+            "180": 0,
+            "182": 6,
+            "183": 6,
+            "184": 6,
+            "185": 6,
+            "186": 6,
+            "187": 6,
+            "189": 6
+          },
+          "Branches": [
+            {
+              "Line": 144,
+              "Offset": 36,
+              "EndOffset": 38,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 144,
+              "Offset": 36,
+              "EndOffset": 67,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 6
+            },
+            {
+              "Line": 156,
+              "Offset": 172,
+              "EndOffset": 174,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 156,
+              "Offset": 172,
+              "EndOffset": 235,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.WebApi.Utilities.BaseController`3/<Delete>d__12": {
+        "System.Void Com.DanLiris.Service.DealTracking.WebApi.Utilities.BaseController`3/<Delete>d__12::MoveNext()": {
+          "Lines": {
+            "193": 6,
+            "194": 6,
+            "195": 0,
+            "196": 0,
+            "200": 6,
+            "201": 6,
+            "202": 6,
+            "204": 6,
+            "206": 0,
+            "207": 0,
+            "208": 0,
+            "209": 0,
+            "210": 0,
+            "211": 0,
+            "213": 6
+          },
+          "Branches": [
+            {
+              "Line": 194,
+              "Offset": 36,
+              "EndOffset": 38,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 194,
+              "Offset": 36,
+              "EndOffset": 67,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 6
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.WebApi\\Utilities\\ResultFormatter.cs": {
+      "Com.DanLiris.Service.DealTracking.WebApi.Utilities.ResultFormatter": {
+        "System.Collections.Generic.Dictionary`2<System.String,System.Object> Com.DanLiris.Service.DealTracking.WebApi.Utilities.ResultFormatter::get_Result()": {
+          "Lines": {
+            "13": 181
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.Dictionary`2<System.String,System.Object> Com.DanLiris.Service.DealTracking.WebApi.Utilities.ResultFormatter::Ok()": {
+          "Lines": {
+            "22": 6,
+            "23": 6,
+            "24": 6
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.Dictionary`2<System.String,System.Object> Com.DanLiris.Service.DealTracking.WebApi.Utilities.ResultFormatter::Ok(TViewModel)": {
+          "Lines": {
+            "27": 1,
+            "28": 1,
+            "29": 1,
+            "30": 1
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.Dictionary`2<System.String,System.Object> Com.DanLiris.Service.DealTracking.WebApi.Utilities.ResultFormatter::Ok(System.Collections.Generic.List`1<TViewModel>,System.Int32,System.Int32,System.Int32,System.Int32,System.Collections.Generic.Dictionary`2<System.String,System.String>,System.Collections.Generic.List`1<System.String>,System.String)": {
+          "Lines": {
+            "33": 7,
+            "34": 7,
+            "35": 7,
+            "36": 7,
+            "37": 7,
+            "38": 7,
+            "39": 7,
+            "40": 7,
+            "41": 7,
+            "42": 7,
+            "44": 7,
+            "45": 1,
+            "46": 1,
+            "47": 1,
+            "48": 1,
+            "49": 1,
+            "51": 6,
+            "52": 6,
+            "53": 6,
+            "55": 7,
+            "56": 7,
+            "57": 7
+          },
+          "Branches": [
+            {
+              "Line": 44,
+              "Offset": 121,
+              "EndOffset": 123,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 44,
+              "Offset": 121,
+              "EndOffset": 203,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 6
+            }
+          ]
+        },
+        "System.Collections.Generic.Dictionary`2<System.String,System.Object> Com.DanLiris.Service.DealTracking.WebApi.Utilities.ResultFormatter::Fail(System.String)": {
+          "Lines": {
+            "60": 1,
+            "61": 1,
+            "62": 1,
+            "63": 1
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.Dictionary`2<System.String,System.Object> Com.DanLiris.Service.DealTracking.WebApi.Utilities.ResultFormatter::Fail()": {
+          "Lines": {
+            "66": 24,
+            "67": 24,
+            "68": 24,
+            "69": 24
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.Dictionary`2<System.String,System.Object> Com.DanLiris.Service.DealTracking.WebApi.Utilities.ResultFormatter::Fail(Com.DanLiris.Service.DealTracking.Lib.Utilities.ServiceValidationException)": {
+          "Lines": {
+            "72": 6,
+            "73": 6,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "80": 0,
+            "81": 0,
+            "82": 0,
+            "83": 0,
+            "84": 0,
+            "85": 0,
+            "86": 0,
+            "87": 0,
+            "89": 6,
+            "90": 6,
+            "91": 6
+          },
+          "Branches": [
+            {
+              "Line": 75,
+              "Offset": 111,
+              "EndOffset": 22,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 75,
+              "Offset": 111,
+              "EndOffset": 113,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 6
+            }
+          ]
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.WebApi.Utilities.ResultFormatter::AddResponseInformation(System.Collections.Generic.Dictionary`2<System.String,System.Object>,System.String,System.Int32,System.String)": {
+          "Lines": {
+            "94": 45,
+            "95": 45,
+            "96": 45,
+            "97": 45,
+            "98": 45
+          },
+          "Branches": []
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.WebApi.Utilities.ResultFormatter::.ctor(System.String,System.Int32,System.String)": {
+          "Lines": {
+            "15": 45,
+            "16": 45,
+            "17": 45,
+            "18": 45,
+            "19": 45
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.WebApi\\Controllers\\v1\\ActivityController.cs": {
+      "Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.ActivityController": {
+        "System.Void Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.ActivityController::.ctor(AutoMapper.IMapper,Com.DanLiris.Service.DealTracking.Lib.Services.IIdentityService,Com.DanLiris.Service.DealTracking.Lib.Services.IValidateService,Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Interfaces.IActivityFacade,Com.DanLiris.Service.DealTracking.Lib.Services.IAzureStorageService)": {
+          "Lines": {
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0
+          },
+          "Branches": []
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.ActivityController::.cctor()": {
+          "Lines": {
+            "26": 0
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.ActivityController/<UploadFile>d__3": {
+        "System.Void Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.ActivityController/<UploadFile>d__3::MoveNext()": {
+          "Lines": {
+            "35": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "42": 0,
+            "43": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "50": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "57": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "71": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "82": 0,
+            "84": 0,
+            "85": 0,
+            "87": 0,
+            "90": 0,
+            "91": 0,
+            "92": 0,
+            "93": 0,
+            "94": 0,
+            "95": 0,
+            "97": 0
+          },
+          "Branches": [
+            {
+              "Line": 45,
+              "Offset": 403,
+              "EndOffset": 197,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 45,
+              "Offset": 403,
+              "EndOffset": 408,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 59,
+              "Offset": 556,
+              "EndOffset": 561,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 59,
+              "Offset": 556,
+              "EndOffset": 1007,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.ActivityController/<GetFile>d__4": {
+        "System.Void Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.ActivityController/<GetFile>d__4::MoveNext()": {
+          "Lines": {
+            "101": 0,
+            "102": 0,
+            "103": 0,
+            "104": 0,
+            "106": 0,
+            "107": 0
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.ActivityController/<GetFile>d__5": {
+        "System.Void Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.ActivityController/<GetFile>d__5::MoveNext()": {
+          "Lines": {
+            "111": 0,
+            "112": 0,
+            "114": 0,
+            "115": 0,
+            "117": 0,
+            "118": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.WebApi\\Controllers\\v1\\BoardController.cs": {
+      "Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.BoardController": {
+        "System.Void Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.BoardController::.ctor(AutoMapper.IMapper,Com.DanLiris.Service.DealTracking.Lib.Services.IIdentityService,Com.DanLiris.Service.DealTracking.Lib.Services.IValidateService,Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Interfaces.IBoardFacade)": {
+          "Lines": {
+            "20": 8,
+            "21": 8,
+            "22": 8
+          },
+          "Branches": []
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.BoardController::.cctor()": {
+          "Lines": {
+            "19": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.WebApi\\Controllers\\v1\\CompanyController.cs": {
+      "Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.CompanyController": {
+        "System.Void Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.CompanyController::.ctor(AutoMapper.IMapper,Com.DanLiris.Service.DealTracking.Lib.Services.IIdentityService,Com.DanLiris.Service.DealTracking.Lib.Services.IValidateService,Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Interfaces.ICompanyFacade)": {
+          "Lines": {
+            "27": 8,
+            "28": 8,
+            "29": 8,
+            "30": 8
+          },
+          "Branches": []
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.CompanyController::.cctor()": {
+          "Lines": {
+            "24": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.WebApi\\Controllers\\v1\\ContactController.cs": {
+      "Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.ContactController": {
+        "System.Void Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.ContactController::.ctor(AutoMapper.IMapper,Com.DanLiris.Service.DealTracking.Lib.Services.IIdentityService,Com.DanLiris.Service.DealTracking.Lib.Services.IValidateService,Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Interfaces.IContactFacade)": {
+          "Lines": {
+            "25": 8,
+            "26": 8,
+            "27": 8
+          },
+          "Branches": []
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.ContactController::.cctor()": {
+          "Lines": {
+            "24": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.WebApi\\Controllers\\v1\\DealController.cs": {
+      "Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.DealController": {
+        "System.Void Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.DealController::.ctor(AutoMapper.IMapper,Com.DanLiris.Service.DealTracking.Lib.Services.IIdentityService,Com.DanLiris.Service.DealTracking.Lib.Services.IValidateService,Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Interfaces.IDealFacade)": {
+          "Lines": {
+            "25": 8,
+            "26": 8,
+            "27": 8
+          },
+          "Branches": []
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.DealController::.cctor()": {
+          "Lines": {
+            "24": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.WebApi\\Controllers\\v1\\MoveActivityController.cs": {
+      "Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.MoveActivityController": {
+        "System.Void Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.MoveActivityController::ValidateUser()": {
+          "Lines": {
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0
+          },
+          "Branches": []
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.MoveActivityController::.ctor(Com.DanLiris.Service.DealTracking.Lib.Services.IIdentityService,Com.DanLiris.Service.DealTracking.Lib.Services.IValidateService,Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Interfaces.IDealFacade)": {
+          "Lines": {
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0
+          },
+          "Branches": []
+        }
+      },
+      "Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.MoveActivityController/<Put>d__5": {
+        "System.Void Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.MoveActivityController/<Put>d__5::MoveNext()": {
+          "Lines": {
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "49": 0,
+            "50": 0,
+            "52": 0,
+            "54": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "70": 0
+          },
+          "Branches": [
+            {
+              "Line": 43,
+              "Offset": 36,
+              "EndOffset": 38,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 43,
+              "Offset": 36,
+              "EndOffset": 67,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.WebApi\\Controllers\\v1\\ReasonController.cs": {
+      "Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.ReasonController": {
+        "System.Void Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.ReasonController::.ctor(AutoMapper.IMapper,Com.DanLiris.Service.DealTracking.Lib.Services.IIdentityService,Com.DanLiris.Service.DealTracking.Lib.Services.IValidateService,Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Interfaces.IReasonFacade)": {
+          "Lines": {
+            "25": 8,
+            "26": 8,
+            "27": 8
+          },
+          "Branches": []
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.ReasonController::.cctor()": {
+          "Lines": {
+            "24": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\ade.pamungkas\\moonlay\\com-danliris-service-deal-tracking\\Com.DanLiris.Service.DealTracking.WebApi\\Controllers\\v1\\StageController.cs": {
+      "Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.StageController": {
+        "System.Void Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.StageController::.ctor(AutoMapper.IMapper,Com.DanLiris.Service.DealTracking.Lib.Services.IIdentityService,Com.DanLiris.Service.DealTracking.Lib.Services.IValidateService,Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Interfaces.IStageFacade)": {
+          "Lines": {
+            "25": 8,
+            "26": 8,
+            "27": 8
+          },
+          "Branches": []
+        },
+        "System.Void Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.StageController::.cctor()": {
+          "Lines": {
+            "24": 1
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}

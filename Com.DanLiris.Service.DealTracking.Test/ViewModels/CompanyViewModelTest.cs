@@ -7,7 +7,7 @@ using Xunit;
 
 namespace Com.DanLiris.Service.DealTracking.Test.ViewModels
 {
-    class CompanyViewModelTest
+    public class CompanyViewModelTest
     {
         [Fact]
         public void ShouldSuccesIntantiateCompanyViewModel()
@@ -25,6 +25,7 @@ namespace Com.DanLiris.Service.DealTracking.Test.ViewModels
             Assert.Equal("Industry", companyViewModel.Industry);
             Assert.Equal("PhoneNumber", companyViewModel.PhoneNumber);
             Assert.Equal("City", companyViewModel.City);
+            Assert.Equal("Website", companyViewModel.Website);
             Assert.Equal("Information", companyViewModel.Information);
 
 
