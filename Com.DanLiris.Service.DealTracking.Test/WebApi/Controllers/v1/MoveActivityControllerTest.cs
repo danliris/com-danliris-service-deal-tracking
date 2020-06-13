@@ -80,6 +80,7 @@ namespace Com.DanLiris.Service.DealTracking.Test.WebApi.Controllers.v1
         {
             MoveActivityViewModel viewModel = new MoveActivityViewModel();
             var facade = new Mock<IDealFacade>();
+         
             var readOnlyList = new Mock<IReadOnlyList<IUpdateEntry>>();
             readOnlyList.Setup(s => s.Count).Returns(1);
             //  IReadOnlyList<IUpdateEntry> 
@@ -87,8 +88,25 @@ namespace Com.DanLiris.Service.DealTracking.Test.WebApi.Controllers.v1
             facade.Setup(s => s.MoveActivity(It.IsAny<MoveActivityViewModel>())).ThrowsAsync(e);
             IActionResult response = await GetController(facade).Put(viewModel);
 
+
             int statusCode = this.GetStatusCode(response);
             Assert.Equal((int)HttpStatusCode.InternalServerError, statusCode);
+        }
+
+        [Fact]
+        public async Task Post_Throws_BadRequest()
+        {
+            MoveActivityViewModel viewModel = new MoveActivityViewModel();
+            var facade = new Mock<IDealFacade>();
+
+            facade.Setup(s => s.MoveActivity(It.IsAny<MoveActivityViewModel>())).ReturnsAsync(1);
+
+            var controller = GetController(facade);
+            controller.ModelState.AddModelError("test", "test");
+            IActionResult response = await controller.Put(viewModel);
+
+            int statusCode = this.GetStatusCode(response);
+            Assert.Equal((int)HttpStatusCode.BadRequest, statusCode);
         }
 
         [Fact]

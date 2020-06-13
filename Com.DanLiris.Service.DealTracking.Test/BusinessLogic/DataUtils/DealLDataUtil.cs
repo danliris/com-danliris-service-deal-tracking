@@ -10,6 +10,7 @@ namespace Com.DanLiris.Service.DealTracking.Test.BusinessLogic.DataUtils
 {
     public class DealLDataUtil : BaseDataUtil<DealFacade, Deal>
     {
+       
         public DealLDataUtil(DealFacade facade) : base(facade)
         {
 

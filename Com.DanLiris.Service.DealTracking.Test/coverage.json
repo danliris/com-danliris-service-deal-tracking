@@ -34,31 +34,31 @@
         },
         "Microsoft.EntityFrameworkCore.DbSet`1<Com.DanLiris.Service.DealTracking.Lib.Models.Deal> Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext::get_DealTrackingDeals()": {
           "Lines": {
-            "21": 0
+            "21": 45
           },
           "Branches": []
         },
         "Microsoft.EntityFrameworkCore.DbSet`1<Com.DanLiris.Service.DealTracking.Lib.Models.Activity> Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext::get_DealTrackingActivities()": {
           "Lines": {
-            "22": 43
+            "22": 50
           },
           "Branches": []
         },
         "Microsoft.EntityFrameworkCore.DbSet`1<Com.DanLiris.Service.DealTracking.Lib.Models.ActivityAttachment> Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext::get_DealTrackingActivityAttachments()": {
           "Lines": {
-            "23": 40
+            "23": 46
           },
           "Branches": []
         },
         "System.Void Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext::OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)": {
           "Lines": {
-            "27": 1,
-            "28": 1,
-            "30": 21,
-            "31": 5,
-            "32": 5,
-            "33": 5,
-            "34": 1
+            "27": 43,
+            "28": 43,
+            "30": 903,
+            "31": 215,
+            "32": 215,
+            "33": 215,
+            "34": 43
           },
           "Branches": [
             {
@@ -67,7 +67,7 @@
               "EndOffset": 65,
               "Path": 1,
               "Ordinal": 1,
-              "Hits": 5
+              "Hits": 215
             },
             {
               "Line": 30,
@@ -75,15 +75,15 @@
               "EndOffset": 90,
               "Path": 0,
               "Ordinal": 0,
-              "Hits": 1
+              "Hits": 43
             }
           ]
         },
         "System.Void Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext>)": {
           "Lines": {
-            "10": 37,
-            "11": 37,
-            "12": 37
+            "10": 43,
+            "11": 43,
+            "12": 43
           },
           "Branches": []
         }
@@ -93,7 +93,7 @@
       "Com.DanLiris.Service.DealTracking.Lib.ViewModels.ActivityAttachmentViewModel": {
         "System.Int64 Com.DanLiris.Service.DealTracking.Lib.ViewModels.ActivityAttachmentViewModel::get_Id()": {
           "Lines": {
-            "9": 3
+            "9": 4
           },
           "Branches": []
         },
@@ -105,7 +105,7 @@
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.ActivityAttachmentViewModel::get_FilePath()": {
           "Lines": {
-            "11": 3
+            "11": 4
           },
           "Branches": []
         }
@@ -762,49 +762,49 @@
       "Com.DanLiris.Service.DealTracking.Lib.ViewModels.MoveActivityViewModel": {
         "System.Int64 Com.DanLiris.Service.DealTracking.Lib.ViewModels.MoveActivityViewModel::get_SourceStageId()": {
           "Lines": {
-            "9": 2
+            "9": 10
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.MoveActivityViewModel::get_SourceDealsOrder()": {
           "Lines": {
-            "10": 2
+            "10": 6
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.MoveActivityViewModel::get_SourceStageName()": {
           "Lines": {
-            "11": 2
+            "11": 6
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.MoveActivityViewModel::get_Type()": {
           "Lines": {
-            "12": 2
+            "12": 10
           },
           "Branches": []
         },
         "System.Int64 Com.DanLiris.Service.DealTracking.Lib.ViewModels.MoveActivityViewModel::get_TargetStageId()": {
           "Lines": {
-            "13": 2
+            "13": 8
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.MoveActivityViewModel::get_TargetDealsOrder()": {
           "Lines": {
-            "14": 2
+            "14": 3
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.MoveActivityViewModel::get_TargetStageName()": {
           "Lines": {
-            "15": 2
+            "15": 3
           },
           "Branches": []
         },
         "System.Int64 Com.DanLiris.Service.DealTracking.Lib.ViewModels.MoveActivityViewModel::get_DealId()": {
           "Lines": {
-            "16": 2
+            "16": 7
           },
           "Branches": []
         }
@@ -1084,9 +1084,9 @@
       "Com.DanLiris.Service.DealTracking.Lib.Utilities.CodeGenerator": {
         "System.String Com.DanLiris.Service.DealTracking.Lib.Utilities.CodeGenerator::Generate()": {
           "Lines": {
-            "14": 42,
-            "15": 42,
-            "16": 42
+            "14": 45,
+            "15": 45,
+            "16": 45
           },
           "Branches": []
         }
@@ -1170,19 +1170,19 @@
         },
         "System.Linq.IQueryable`1<TModel> Com.DanLiris.Service.DealTracking.Lib.Utilities.QueryHelper`1::Filter(System.Linq.IQueryable`1<TModel>,System.Collections.Generic.Dictionary`2<System.String,System.Object>)": {
           "Lines": {
-            "39": 7,
-            "40": 7,
-            "41": 0,
-            "42": 0,
-            "43": 0,
-            "44": 0,
-            "45": 0,
-            "46": 0,
-            "48": 0,
-            "49": 0,
-            "50": 0,
-            "51": 7,
-            "52": 7
+            "39": 8,
+            "40": 8,
+            "41": 1,
+            "42": 5,
+            "43": 1,
+            "44": 1,
+            "45": 1,
+            "46": 1,
+            "48": 1,
+            "49": 1,
+            "50": 1,
+            "51": 8,
+            "52": 8
           },
           "Branches": [
             {
@@ -1191,7 +1191,7 @@
               "EndOffset": 4,
               "Path": 0,
               "Ordinal": 0,
-              "Hits": 7
+              "Hits": 8
             },
             {
               "Line": 40,
@@ -1207,7 +1207,7 @@
               "EndOffset": 29,
               "Path": 0,
               "Ordinal": 2,
-              "Hits": 0
+              "Hits": 1
             },
             {
               "Line": 42,
@@ -1215,7 +1215,7 @@
               "EndOffset": 40,
               "Path": 1,
               "Ordinal": 5,
-              "Hits": 0
+              "Hits": 1
             },
             {
               "Line": 42,
@@ -1223,7 +1223,7 @@
               "EndOffset": 117,
               "Path": 0,
               "Ordinal": 4,
-              "Hits": 0
+              "Hits": 1
             },
             {
               "Line": 40,
@@ -1231,25 +1231,25 @@
               "EndOffset": 135,
               "Path": 1,
               "Ordinal": 3,
-              "Hits": 7
+              "Hits": 8
             }
           ]
         },
         "System.Linq.IQueryable`1<TModel> Com.DanLiris.Service.DealTracking.Lib.Utilities.QueryHelper`1::Order(System.Linq.IQueryable`1<TModel>,System.Collections.Generic.Dictionary`2<System.String,System.String>)": {
           "Lines": {
-            "55": 7,
-            "57": 7,
+            "55": 8,
+            "57": 8,
             "58": 7,
             "59": 7,
             "61": 7,
             "62": 7,
-            "65": 0,
-            "66": 0,
-            "67": 0,
-            "69": 0,
-            "70": 0,
-            "71": 7,
-            "72": 7
+            "65": 1,
+            "66": 1,
+            "67": 1,
+            "69": 1,
+            "70": 1,
+            "71": 8,
+            "72": 8
           },
           "Branches": [
             {
@@ -1266,7 +1266,7 @@
               "EndOffset": 111,
               "Path": 1,
               "Ordinal": 1,
-              "Hits": 0
+              "Hits": 1
             }
           ]
         }
@@ -1282,25 +1282,25 @@
         },
         "System.Collections.Generic.IEnumerable`1<System.ComponentModel.DataAnnotations.ValidationResult> Com.DanLiris.Service.DealTracking.Lib.Utilities.ServiceValidationException::get_ValidationResults()": {
           "Lines": {
-            "21": 12
+            "21": 14
           },
           "Branches": []
         },
         "System.Void Com.DanLiris.Service.DealTracking.Lib.Utilities.ServiceValidationException::.ctor(System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.IEnumerable`1<System.ComponentModel.DataAnnotations.ValidationResult>)": {
           "Lines": {
-            "10": 6,
-            "11": 6,
-            "13": 6
+            "10": 7,
+            "11": 7,
+            "13": 7
           },
           "Branches": []
         },
         "System.Void Com.DanLiris.Service.DealTracking.Lib.Utilities.ServiceValidationException::.ctor(System.String,System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.IEnumerable`1<System.ComponentModel.DataAnnotations.ValidationResult>)": {
           "Lines": {
-            "14": 6,
-            "15": 6,
-            "16": 6,
-            "17": 6,
-            "18": 6
+            "14": 7,
+            "15": 7,
+            "16": 7,
+            "17": 7,
+            "18": 7
           },
           "Branches": []
         }
@@ -1310,37 +1310,37 @@
       "Com.DanLiris.Service.DealTracking.Lib.Utilities.BaseClass.BaseLogic`1": {
         "System.Void Com.DanLiris.Service.DealTracking.Lib.Utilities.BaseClass.BaseLogic`1::Create(TModel)": {
           "Lines": {
-            "28": 42,
-            "29": 42,
-            "30": 42,
-            "31": 42
+            "28": 43,
+            "29": 43,
+            "30": 43,
+            "31": 43
           },
           "Branches": []
         },
         "System.Threading.Tasks.Task`1<TModel> Com.DanLiris.Service.DealTracking.Lib.Utilities.BaseClass.BaseLogic`1::ReadById(System.Int64)": {
           "Lines": {
-            "34": 10,
-            "35": 10,
-            "36": 10
+            "34": 11,
+            "35": 11,
+            "36": 11
           },
           "Branches": []
         },
         "System.Void Com.DanLiris.Service.DealTracking.Lib.Utilities.BaseClass.BaseLogic`1::Update(System.Int64,TModel)": {
           "Lines": {
-            "39": 13,
-            "40": 13,
-            "41": 13,
-            "42": 13
+            "39": 14,
+            "40": 14,
+            "41": 14,
+            "42": 14
           },
           "Branches": []
         },
         "System.Void Com.DanLiris.Service.DealTracking.Lib.Utilities.BaseClass.BaseLogic`1::.ctor(System.IServiceProvider,Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext)": {
           "Lines": {
-            "19": 47,
-            "20": 47,
-            "21": 47,
-            "22": 47,
-            "23": 47
+            "19": 65,
+            "20": 65,
+            "21": 65,
+            "22": 65,
+            "23": 65
           },
           "Branches": []
         }
@@ -1362,7 +1362,7 @@
       "Com.DanLiris.Service.DealTracking.Lib.Utilities.BaseClass.BaseModel": {
         "System.String Com.DanLiris.Service.DealTracking.Lib.Utilities.BaseClass.BaseModel::get_UId()": {
           "Lines": {
-            "10": 589
+            "10": 642
           },
           "Branches": []
         }
@@ -1543,7 +1543,7 @@
       "Com.DanLiris.Service.DealTracking.Lib.Services.IdentityService": {
         "System.String Com.DanLiris.Service.DealTracking.Lib.Services.IdentityService::get_Username()": {
           "Lines": {
-            "9": 109
+            "9": 117
           },
           "Branches": []
         },
@@ -1664,97 +1664,97 @@
       "Com.DanLiris.Service.DealTracking.Lib.Models.Activity": {
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Activity::get_Code()": {
           "Lines": {
-            "13": 106
+            "13": 104
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Activity::get_DealCode()": {
           "Lines": {
-            "15": 77
+            "15": 82
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Activity::get_DealName()": {
           "Lines": {
-            "17": 77
+            "17": 82
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Activity::get_Type()": {
           "Lines": {
-            "19": 87
+            "19": 84
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Activity::get_Notes()": {
           "Lines": {
-            "21": 82
+            "21": 78
           },
           "Branches": []
         },
         "System.Boolean Com.DanLiris.Service.DealTracking.Lib.Models.Activity::get_Status()": {
           "Lines": {
-            "24": 82
+            "24": 78
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Activity::get_TaskTitle()": {
           "Lines": {
-            "26": 82
+            "26": 78
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Activity::get_AssignedTo()": {
           "Lines": {
-            "28": 82
+            "28": 78
           },
           "Branches": []
         },
         "System.Nullable`1<System.DateTimeOffset> Com.DanLiris.Service.DealTracking.Lib.Models.Activity::get_DueDate()": {
           "Lines": {
-            "29": 82
+            "29": 78
           },
           "Branches": []
         },
         "System.Collections.Generic.ICollection`1<Com.DanLiris.Service.DealTracking.Lib.Models.ActivityAttachment> Com.DanLiris.Service.DealTracking.Lib.Models.Activity::get_Attachments()": {
           "Lines": {
-            "32": 118
+            "32": 123
           },
           "Branches": []
         },
         "System.Nullable`1<System.Int64> Com.DanLiris.Service.DealTracking.Lib.Models.Activity::get_StageFromId()": {
           "Lines": {
-            "35": 82
+            "35": 79
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Activity::get_StageFromName()": {
           "Lines": {
-            "37": 82
+            "37": 79
           },
           "Branches": []
         },
         "System.Nullable`1<System.Int64> Com.DanLiris.Service.DealTracking.Lib.Models.Activity::get_StageToId()": {
           "Lines": {
-            "38": 82
+            "38": 79
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Activity::get_StageToName()": {
           "Lines": {
-            "40": 82
+            "40": 79
           },
           "Branches": []
         },
         "System.Int64 Com.DanLiris.Service.DealTracking.Lib.Models.Activity::get_DealId()": {
           "Lines": {
-            "42": 197
+            "42": 158
           },
           "Branches": []
         },
         "Com.DanLiris.Service.DealTracking.Lib.Models.Deal Com.DanLiris.Service.DealTracking.Lib.Models.Activity::get_Deal()": {
           "Lines": {
-            "44": 90
+            "44": 96
           },
           "Branches": []
         }
@@ -1764,25 +1764,25 @@
       "Com.DanLiris.Service.DealTracking.Lib.Models.ActivityAttachment": {
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.ActivityAttachment::get_FileName()": {
           "Lines": {
-            "11": 51
+            "11": 46
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.ActivityAttachment::get_FilePath()": {
           "Lines": {
-            "12": 52
+            "12": 47
           },
           "Branches": []
         },
         "System.Int64 Com.DanLiris.Service.DealTracking.Lib.Models.ActivityAttachment::get_ActivityId()": {
           "Lines": {
-            "13": 165
+            "13": 107
           },
           "Branches": []
         },
         "Com.DanLiris.Service.DealTracking.Lib.Models.Activity Com.DanLiris.Service.DealTracking.Lib.Models.ActivityAttachment::get_Activity()": {
           "Lines": {
-            "15": 65
+            "15": 62
           },
           "Branches": []
         }
@@ -1792,37 +1792,37 @@
       "Com.DanLiris.Service.DealTracking.Lib.Models.Board": {
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Board::get_Code()": {
           "Lines": {
-            "13": 145
+            "13": 156
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Board::get_Title()": {
           "Lines": {
-            "15": 135
+            "15": 146
           },
           "Branches": []
         },
         "System.Int32 Com.DanLiris.Service.DealTracking.Lib.Models.Board::get_CurrencyId()": {
           "Lines": {
-            "16": 129
+            "16": 144
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Board::get_CurrencyCode()": {
           "Lines": {
-            "18": 129
+            "18": 144
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Board::get_CurrencySymbol()": {
           "Lines": {
-            "20": 129
+            "20": 144
           },
           "Branches": []
         },
         "System.Collections.Generic.ICollection`1<Com.DanLiris.Service.DealTracking.Lib.Models.Stage> Com.DanLiris.Service.DealTracking.Lib.Models.Board::get_Stages()": {
           "Lines": {
-            "21": 154
+            "21": 173
           },
           "Branches": []
         }
@@ -1832,43 +1832,43 @@
       "Com.DanLiris.Service.DealTracking.Lib.Models.Company": {
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Company::get_Code()": {
           "Lines": {
-            "12": 77
+            "12": 70
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Company::get_Name()": {
           "Lines": {
-            "14": 67
+            "14": 60
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Company::get_Website()": {
           "Lines": {
-            "16": 67
+            "16": 60
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Company::get_Industry()": {
           "Lines": {
-            "18": 67
+            "18": 60
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Company::get_PhoneNumber()": {
           "Lines": {
-            "20": 67
+            "20": 60
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Company::get_City()": {
           "Lines": {
-            "22": 67
+            "22": 60
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Company::get_Information()": {
           "Lines": {
-            "23": 59
+            "23": 58
           },
           "Branches": []
         }
@@ -1878,31 +1878,31 @@
       "Com.DanLiris.Service.DealTracking.Lib.Models.Contact": {
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Contact::get_Code()": {
           "Lines": {
-            "13": 45
+            "13": 43
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Contact::get_Name()": {
           "Lines": {
-            "15": 35
+            "15": 33
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Contact::get_Email()": {
           "Lines": {
-            "17": 35
+            "17": 33
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Contact::get_PhoneNumber()": {
           "Lines": {
-            "19": 35
+            "19": 33
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Contact::get_JobTitle()": {
           "Lines": {
-            "21": 35
+            "21": 33
           },
           "Branches": []
         },
@@ -1914,13 +1914,13 @@
         },
         "System.Int64 Com.DanLiris.Service.DealTracking.Lib.Models.Contact::get_CompanyId()": {
           "Lines": {
-            "23": 93
+            "23": 60
           },
           "Branches": []
         },
         "Com.DanLiris.Service.DealTracking.Lib.Models.Company Com.DanLiris.Service.DealTracking.Lib.Models.Contact::get_Company()": {
           "Lines": {
-            "25": 43
+            "25": 40
           },
           "Branches": []
         }
@@ -1930,97 +1930,97 @@
       "Com.DanLiris.Service.DealTracking.Lib.Models.Deal": {
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Deal::get_Code()": {
           "Lines": {
-            "13": 207
+            "13": 229
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Deal::get_Name()": {
           "Lines": {
-            "15": 197
+            "15": 215
           },
           "Branches": []
         },
         "System.Double Com.DanLiris.Service.DealTracking.Lib.Models.Deal::get_Amount()": {
           "Lines": {
-            "16": 180
+            "16": 195
           },
           "Branches": []
         },
         "System.Double Com.DanLiris.Service.DealTracking.Lib.Models.Deal::get_Quantity()": {
           "Lines": {
-            "17": 180
+            "17": 195
           },
           "Branches": []
         },
         "System.Int64 Com.DanLiris.Service.DealTracking.Lib.Models.Deal::get_CompanyId()": {
           "Lines": {
-            "18": 164
+            "18": 191
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Deal::get_CompanyCode()": {
           "Lines": {
-            "20": 164
+            "20": 191
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Deal::get_CompanyName()": {
           "Lines": {
-            "22": 164
+            "22": 191
           },
           "Branches": []
         },
         "System.Int64 Com.DanLiris.Service.DealTracking.Lib.Models.Deal::get_ContactId()": {
           "Lines": {
-            "23": 164
+            "23": 191
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Deal::get_ContactCode()": {
           "Lines": {
-            "25": 164
+            "25": 191
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Deal::get_ContactName()": {
           "Lines": {
-            "27": 164
+            "27": 191
           },
           "Branches": []
         },
         "System.DateTimeOffset Com.DanLiris.Service.DealTracking.Lib.Models.Deal::get_CloseDate()": {
           "Lines": {
-            "28": 180
+            "28": 195
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Deal::get_Description()": {
           "Lines": {
-            "29": 164
+            "29": 191
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Deal::get_Reason()": {
           "Lines": {
-            "30": 164
+            "30": 191
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Deal::get_UomUnit()": {
           "Lines": {
-            "31": 175
+            "31": 190
           },
           "Branches": []
         },
         "System.Int64 Com.DanLiris.Service.DealTracking.Lib.Models.Deal::get_StageId()": {
           "Lines": {
-            "32": 550
+            "32": 537
           },
           "Branches": []
         },
         "Com.DanLiris.Service.DealTracking.Lib.Models.Stage Com.DanLiris.Service.DealTracking.Lib.Models.Deal::get_Stage()": {
           "Lines": {
-            "34": 259
+            "34": 312
           },
           "Branches": []
         }
@@ -2030,13 +2030,13 @@
       "Com.DanLiris.Service.DealTracking.Lib.Models.Reason": {
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Reason::get_Code()": {
           "Lines": {
-            "12": 49
+            "12": 45
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Reason::get_LoseReason()": {
           "Lines": {
-            "14": 39
+            "14": 35
           },
           "Branches": []
         }
@@ -2046,37 +2046,37 @@
       "Com.DanLiris.Service.DealTracking.Lib.Models.Stage": {
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Stage::get_Code()": {
           "Lines": {
-            "13": 132
+            "13": 141
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Stage::get_Name()": {
           "Lines": {
-            "15": 122
+            "15": 131
           },
           "Branches": []
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.Models.Stage::get_DealsOrder()": {
           "Lines": {
-            "16": 139
+            "16": 148
           },
           "Branches": []
         },
         "System.Int64 Com.DanLiris.Service.DealTracking.Lib.Models.Stage::get_BoardId()": {
           "Lines": {
-            "17": 339
+            "17": 263
           },
           "Branches": []
         },
         "Com.DanLiris.Service.DealTracking.Lib.Models.Board Com.DanLiris.Service.DealTracking.Lib.Models.Stage::get_Board()": {
           "Lines": {
-            "19": 132
+            "19": 170
           },
           "Branches": []
         },
         "System.Collections.Generic.ICollection`1<Com.DanLiris.Service.DealTracking.Lib.Models.Deal> Com.DanLiris.Service.DealTracking.Lib.Models.Stage::get_Deals()": {
           "Lines": {
-            "20": 186
+            "20": 205
           },
           "Branches": []
         }
@@ -2140,9 +2140,9 @@
         },
         "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Implementation.ActivityLogic::.ctor(System.IServiceProvider,Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext)": {
           "Lines": {
-            "16": 12,
-            "17": 12,
-            "18": 12
+            "16": 18,
+            "17": 18,
+            "18": 18
           },
           "Branches": []
         }
@@ -2338,9 +2338,9 @@
         },
         "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Implementation.DealLogic::.ctor(System.IServiceProvider,Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext)": {
           "Lines": {
-            "14": 5,
-            "15": 5,
-            "16": 5
+            "14": 11,
+            "15": 11,
+            "16": 11
           },
           "Branches": []
         }
@@ -2511,9 +2511,9 @@
         },
         "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Implementation.StageLogic::.ctor(System.IServiceProvider,Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext)": {
           "Lines": {
-            "14": 10,
-            "15": 10,
-            "16": 10
+            "14": 16,
+            "15": 16,
+            "16": 16
           },
           "Branches": []
         }
@@ -3011,16 +3011,16 @@
         },
         "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.DealFacade::.ctor(System.IServiceProvider,Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext)": {
           "Lines": {
-            "26": 5,
-            "27": 5,
-            "28": 5,
-            "29": 5,
-            "30": 5,
-            "31": 5,
-            "32": 5,
-            "33": 5,
-            "34": 5,
-            "35": 5
+            "26": 11,
+            "27": 11,
+            "28": 11,
+            "29": 11,
+            "30": 11,
+            "31": 11,
+            "32": 11,
+            "33": 11,
+            "34": 11,
+            "35": 11
           },
           "Branches": []
         }
@@ -3028,16 +3028,16 @@
       "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.DealFacade/<Create>d__8": {
         "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.DealFacade/<Create>d__8::MoveNext()": {
           "Lines": {
-            "38": 5,
-            "39": 5,
-            "41": 5,
-            "42": 5,
-            "44": 5,
-            "46": 5,
-            "47": 5,
-            "48": 5,
-            "49": 5,
-            "50": 5,
+            "38": 7,
+            "39": 7,
+            "41": 7,
+            "42": 7,
+            "44": 7,
+            "46": 7,
+            "47": 7,
+            "48": 7,
+            "49": 7,
+            "50": 7,
             "52": 5,
             "55": 5,
             "56": 5,
@@ -3047,14 +3047,14 @@
             "61": 5,
             "62": 5,
             "63": 5,
-            "64": 0,
-            "65": 0,
-            "66": 0,
-            "67": 0,
-            "69": 0,
-            "70": 0,
-            "71": 0,
-            "72": 0,
+            "64": 1,
+            "65": 1,
+            "66": 1,
+            "67": 1,
+            "69": 1,
+            "70": 1,
+            "71": 1,
+            "72": 1,
             "75": 5,
             "76": 5,
             "78": 5,
@@ -3067,7 +3067,7 @@
               "EndOffset": 122,
               "Path": 1,
               "Ordinal": 1,
-              "Hits": 5
+              "Hits": 7
             },
             {
               "Line": 49,
@@ -3075,7 +3075,7 @@
               "EndOffset": 311,
               "Path": 0,
               "Ordinal": 0,
-              "Hits": 5
+              "Hits": 7
             },
             {
               "Line": 58,
@@ -3099,9 +3099,10 @@
       "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.DealFacade/<ReadById>d__10": {
         "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.DealFacade/<ReadById>d__10::MoveNext()": {
           "Lines": {
-            "87": 1,
-            "88": 1,
-            "89": 1
+            "87": 2,
+            "88": 2,
+            "89": 2,
+            "91": 2
           },
           "Branches": []
         }
@@ -3109,10 +3110,10 @@
       "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.DealFacade/<Update>d__11": {
         "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.DealFacade/<Update>d__11::MoveNext()": {
           "Lines": {
-            "92": 1,
-            "93": 1,
-            "94": 1,
-            "95": 1
+            "94": 2,
+            "95": 2,
+            "96": 2,
+            "97": 2
           },
           "Branches": []
         }
@@ -3120,25 +3121,25 @@
       "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.DealFacade/<Delete>d__12": {
         "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.DealFacade/<Delete>d__12::MoveNext()": {
           "Lines": {
-            "98": 1,
-            "99": 1,
+            "100": 1,
             "101": 1,
-            "102": 1,
             "103": 1,
+            "104": 1,
             "105": 1,
-            "107": 5,
-            "108": 1,
-            "109": 1,
+            "107": 1,
+            "109": 5,
             "110": 1,
+            "111": 1,
             "112": 1,
-            "113": 1,
+            "114": 1,
             "115": 1,
             "117": 1,
-            "118": 1
+            "119": 1,
+            "120": 1
           },
           "Branches": [
             {
-              "Line": 107,
+              "Line": 109,
               "Offset": 517,
               "EndOffset": 453,
               "Path": 1,
@@ -3146,7 +3147,7 @@
               "Hits": 1
             },
             {
-              "Line": 107,
+              "Line": 109,
               "Offset": 517,
               "EndOffset": 519,
               "Path": 0,
@@ -3159,115 +3160,115 @@
       "Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.DealFacade/<MoveActivity>d__13": {
         "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.DealFacade/<MoveActivity>d__13::MoveNext()": {
           "Lines": {
-            "121": 0,
-            "122": 0,
-            "124": 0,
-            "125": 0,
-            "127": 0,
-            "131": 0,
-            "132": 0,
-            "133": 0,
-            "135": 0,
-            "136": 0,
-            "138": 0,
-            "139": 0,
-            "140": 0,
-            "142": 0,
-            "143": 0,
-            "144": 0,
-            "145": 0,
-            "146": 0,
-            "147": 0,
-            "148": 0,
-            "149": 0,
-            "150": 0,
-            "151": 0,
-            "152": 0,
-            "155": 0,
-            "156": 0,
-            "157": 0,
-            "158": 0,
-            "159": 0,
-            "161": 0,
-            "162": 0,
-            "164": 0,
-            "165": 0,
-            "166": 0,
-            "167": 0,
-            "168": 0,
-            "170": 0,
-            "171": 0,
-            "172": 0,
-            "173": 0,
-            "176": 0,
-            "177": 0,
-            "179": 0,
-            "180": 0
+            "123": 4,
+            "124": 4,
+            "126": 4,
+            "127": 4,
+            "129": 4,
+            "133": 1,
+            "134": 1,
+            "135": 1,
+            "137": 3,
+            "138": 1,
+            "140": 1,
+            "141": 1,
+            "142": 1,
+            "144": 1,
+            "145": 1,
+            "146": 1,
+            "147": 1,
+            "148": 1,
+            "149": 1,
+            "150": 1,
+            "151": 1,
+            "152": 1,
+            "153": 1,
+            "154": 1,
+            "157": 1,
+            "158": 1,
+            "159": 1,
+            "160": 1,
+            "161": 1,
+            "163": 1,
+            "164": 1,
+            "166": 2,
+            "167": 1,
+            "168": 1,
+            "169": 1,
+            "170": 1,
+            "172": 1,
+            "173": 1,
+            "174": 1,
+            "175": 1,
+            "178": 2,
+            "179": 2,
+            "181": 2,
+            "182": 2
           },
           "Branches": [
             {
-              "Line": 127,
+              "Line": 129,
               "Offset": 142,
               "EndOffset": 147,
               "Path": 0,
               "Ordinal": 0,
-              "Hits": 0
+              "Hits": 4
             },
             {
-              "Line": 127,
+              "Line": 129,
               "Offset": 165,
               "EndOffset": 167,
               "Path": 0,
               "Ordinal": 2,
-              "Hits": 0
+              "Hits": 3
             },
             {
-              "Line": 127,
+              "Line": 129,
               "Offset": 165,
               "EndOffset": 188,
               "Path": 1,
               "Ordinal": 3,
-              "Hits": 0
+              "Hits": 1
             },
             {
-              "Line": 127,
+              "Line": 129,
               "Offset": 178,
               "EndOffset": 369,
               "Path": 1,
               "Ordinal": 5,
-              "Hits": 0
+              "Hits": 3
             },
             {
-              "Line": 158,
+              "Line": 160,
               "Offset": 1090,
               "EndOffset": 896,
               "Path": 1,
               "Ordinal": 7,
-              "Hits": 0
+              "Hits": 1
             },
             {
-              "Line": 158,
+              "Line": 160,
               "Offset": 1090,
               "EndOffset": 1095,
               "Path": 0,
               "Ordinal": 6,
-              "Hits": 0
+              "Hits": 1
             },
             {
-              "Line": 127,
+              "Line": 129,
               "Offset": 142,
               "EndOffset": 1262,
               "Path": 1,
               "Ordinal": 1,
-              "Hits": 0
+              "Hits": 2
             },
             {
-              "Line": 127,
+              "Line": 129,
               "Offset": 178,
               "EndOffset": 1262,
               "Path": 0,
               "Ordinal": 4,
-              "Hits": 0
+              "Hits": 2
             }
           ]
         }
@@ -3373,13 +3374,13 @@
         },
         "System.Void Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades.StageFacade::.ctor(System.IServiceProvider,Com.DanLiris.Service.DealTracking.Lib.DealTrackingDbContext)": {
           "Lines": {
-            "22": 10,
-            "23": 10,
-            "24": 10,
-            "25": 10,
-            "26": 10,
-            "27": 10,
-            "28": 10
+            "22": 16,
+            "23": 16,
+            "24": 16,
+            "25": 16,
+            "26": 16,
+            "27": 16,
+            "28": 16
           },
           "Branches": []
         }
@@ -3783,10 +3784,10 @@
       "Com.DanLiris.Service.DealTracking.WebApi.Utilities.BaseController`3": {
         "System.Void Com.DanLiris.Service.DealTracking.WebApi.Utilities.BaseController`3::ValidateUser()": {
           "Lines": {
-            "37": 42,
-            "38": 84,
-            "39": 42,
-            "40": 42
+            "37": 43,
+            "38": 86,
+            "39": 43,
+            "40": 43
           },
           "Branches": [
             {
@@ -3795,7 +3796,7 @@
               "EndOffset": 26,
               "Path": 0,
               "Ordinal": 0,
-              "Hits": 6
+              "Hits": 7
             },
             {
               "Line": 38,
@@ -3803,7 +3804,7 @@
               "EndOffset": 49,
               "Path": 1,
               "Ordinal": 1,
-              "Hits": 42
+              "Hits": 43
             }
           ]
         },
@@ -3838,14 +3839,14 @@
         },
         "System.Void Com.DanLiris.Service.DealTracking.WebApi.Utilities.BaseController`3::.ctor(AutoMapper.IMapper,Com.DanLiris.Service.DealTracking.Lib.Services.IIdentityService,Com.DanLiris.Service.DealTracking.Lib.Services.IValidateService,TFacade,System.String)": {
           "Lines": {
-            "27": 48,
-            "28": 48,
-            "29": 48,
-            "30": 48,
-            "31": 48,
-            "32": 48,
-            "33": 48,
-            "34": 48
+            "27": 50,
+            "28": 50,
+            "29": 50,
+            "30": 50,
+            "31": 50,
+            "32": 50,
+            "33": 50,
+            "34": 50
           },
           "Branches": []
         }
@@ -4065,7 +4066,7 @@
       "Com.DanLiris.Service.DealTracking.WebApi.Utilities.ResultFormatter": {
         "System.Collections.Generic.Dictionary`2<System.String,System.Object> Com.DanLiris.Service.DealTracking.WebApi.Utilities.ResultFormatter::get_Result()": {
           "Lines": {
-            "13": 181
+            "13": 193
           },
           "Branches": []
         },
@@ -4141,31 +4142,31 @@
         },
         "System.Collections.Generic.Dictionary`2<System.String,System.Object> Com.DanLiris.Service.DealTracking.WebApi.Utilities.ResultFormatter::Fail()": {
           "Lines": {
-            "66": 24,
-            "67": 24,
-            "68": 24,
-            "69": 24
+            "66": 26,
+            "67": 26,
+            "68": 26,
+            "69": 26
           },
           "Branches": []
         },
         "System.Collections.Generic.Dictionary`2<System.String,System.Object> Com.DanLiris.Service.DealTracking.WebApi.Utilities.ResultFormatter::Fail(Com.DanLiris.Service.DealTracking.Lib.Utilities.ServiceValidationException)": {
           "Lines": {
-            "72": 6,
-            "73": 6,
-            "75": 0,
-            "76": 0,
-            "77": 0,
-            "80": 0,
-            "81": 0,
+            "72": 7,
+            "73": 7,
+            "75": 23,
+            "76": 1,
+            "77": 1,
+            "80": 1,
+            "81": 1,
             "82": 0,
-            "83": 0,
-            "84": 0,
-            "85": 0,
-            "86": 0,
-            "87": 0,
-            "89": 6,
-            "90": 6,
-            "91": 6
+            "83": 1,
+            "84": 1,
+            "85": 1,
+            "86": 1,
+            "87": 1,
+            "89": 7,
+            "90": 7,
+            "91": 7
           },
           "Branches": [
             {
@@ -4174,7 +4175,7 @@
               "EndOffset": 22,
               "Path": 1,
               "Ordinal": 1,
-              "Hits": 0
+              "Hits": 1
             },
             {
               "Line": 75,
@@ -4182,27 +4183,27 @@
               "EndOffset": 113,
               "Path": 0,
               "Ordinal": 0,
-              "Hits": 6
+              "Hits": 7
             }
           ]
         },
         "System.Void Com.DanLiris.Service.DealTracking.WebApi.Utilities.ResultFormatter::AddResponseInformation(System.Collections.Generic.Dictionary`2<System.String,System.Object>,System.String,System.Int32,System.String)": {
           "Lines": {
-            "94": 45,
-            "95": 45,
-            "96": 45,
-            "97": 45,
-            "98": 45
+            "94": 48,
+            "95": 48,
+            "96": 48,
+            "97": 48,
+            "98": 48
           },
           "Branches": []
         },
         "System.Void Com.DanLiris.Service.DealTracking.WebApi.Utilities.ResultFormatter::.ctor(System.String,System.Int32,System.String)": {
           "Lines": {
-            "15": 45,
-            "16": 45,
-            "17": 45,
-            "18": 45,
-            "19": 45
+            "15": 48,
+            "16": 48,
+            "17": 48,
+            "18": 48,
+            "19": 48
           },
           "Branches": []
         }
@@ -4212,16 +4213,16 @@
       "Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.ActivityController": {
         "System.Void Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.ActivityController::.ctor(AutoMapper.IMapper,Com.DanLiris.Service.DealTracking.Lib.Services.IIdentityService,Com.DanLiris.Service.DealTracking.Lib.Services.IValidateService,Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Interfaces.IActivityFacade,Com.DanLiris.Service.DealTracking.Lib.Services.IAzureStorageService)": {
           "Lines": {
-            "28": 0,
-            "29": 0,
-            "30": 0,
-            "31": 0
+            "28": 2,
+            "29": 2,
+            "30": 2,
+            "31": 2
           },
           "Branches": []
         },
         "System.Void Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.ActivityController::.cctor()": {
           "Lines": {
-            "26": 0
+            "26": 1
           },
           "Branches": []
         }
@@ -4315,12 +4316,12 @@
       "Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.ActivityController/<GetFile>d__4": {
         "System.Void Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.ActivityController/<GetFile>d__4::MoveNext()": {
           "Lines": {
-            "101": 0,
-            "102": 0,
-            "103": 0,
-            "104": 0,
-            "106": 0,
-            "107": 0
+            "101": 1,
+            "102": 1,
+            "103": 1,
+            "104": 1,
+            "106": 1,
+            "107": 1
           },
           "Branches": []
         }
@@ -4328,12 +4329,12 @@
       "Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.ActivityController/<GetFile>d__5": {
         "System.Void Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.ActivityController/<GetFile>d__5::MoveNext()": {
           "Lines": {
-            "111": 0,
-            "112": 0,
-            "114": 0,
-            "115": 0,
-            "117": 0,
-            "118": 0
+            "111": 1,
+            "112": 1,
+            "114": 1,
+            "115": 1,
+            "117": 1,
+            "118": 1
           },
           "Branches": []
         }
@@ -4416,20 +4417,20 @@
       "Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.MoveActivityController": {
         "System.Void Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.MoveActivityController::ValidateUser()": {
           "Lines": {
-            "35": 1,
-            "36": 2,
-            "37": 1,
-            "38": 1
+            "35": 3,
+            "36": 6,
+            "37": 3,
+            "38": 3
           },
           "Branches": []
         },
         "System.Void Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.MoveActivityController::.ctor(Com.DanLiris.Service.DealTracking.Lib.Services.IIdentityService,Com.DanLiris.Service.DealTracking.Lib.Services.IValidateService,Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Interfaces.IDealFacade)": {
           "Lines": {
-            "28": 1,
-            "29": 1,
-            "30": 1,
-            "31": 1,
-            "32": 1
+            "28": 4,
+            "29": 4,
+            "30": 4,
+            "31": 4,
+            "32": 4
           },
           "Branches": []
         }
@@ -4437,27 +4438,27 @@
       "Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.MoveActivityController/<Put>d__5": {
         "System.Void Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1.MoveActivityController/<Put>d__5::MoveNext()": {
           "Lines": {
-            "42": 1,
-            "43": 1,
-            "44": 0,
-            "45": 0,
-            "49": 1,
-            "50": 1,
-            "52": 1,
+            "42": 4,
+            "43": 4,
+            "44": 1,
+            "45": 1,
+            "49": 3,
+            "50": 3,
+            "52": 3,
             "54": 1,
-            "56": 0,
-            "57": 0,
-            "58": 0,
-            "59": 0,
-            "60": 0,
-            "61": 0,
-            "63": 0,
-            "64": 0,
-            "65": 0,
-            "66": 0,
-            "67": 0,
-            "68": 0,
-            "70": 1
+            "56": 1,
+            "57": 1,
+            "58": 1,
+            "59": 1,
+            "60": 1,
+            "61": 1,
+            "63": 1,
+            "64": 1,
+            "65": 1,
+            "66": 1,
+            "67": 1,
+            "68": 1,
+            "70": 4
           },
           "Branches": [
             {
@@ -4466,7 +4467,7 @@
               "EndOffset": 38,
               "Path": 0,
               "Ordinal": 0,
-              "Hits": 0
+              "Hits": 1
             },
             {
               "Line": 43,
@@ -4474,7 +4475,7 @@
               "EndOffset": 67,
               "Path": 1,
               "Ordinal": 1,
-              "Hits": 1
+              "Hits": 3
             }
           ]
         }

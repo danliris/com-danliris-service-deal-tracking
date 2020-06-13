@@ -61,7 +61,7 @@ namespace Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Implementation
             return Tuple.Create(Data, TotalData, OrderDictionary, SelectedFields);
         }
 
-        public void UpdateDealsOrder(long id, string dealsOrder)
+        public virtual void UpdateDealsOrder(long id, string dealsOrder)
         {
             Stage model = this.DbSet.Single(p => p.Id.Equals(id));
 
