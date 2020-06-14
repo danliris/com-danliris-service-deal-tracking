@@ -8,7 +8,9 @@ using Com.DanLiris.Service.DealTracking.Test.WebApi.Utilities;
 using Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1;
 using Com.DanLiris.Service.DealTracking.WebApi.Utilities;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.Internal;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Primitives;
 using Moq;
 using System;
 using System.Collections.Generic;
@@ -57,8 +59,13 @@ namespace Com.DanLiris.Service.DealTracking.Test.WebApi.Controllers.v1
             };
             controller.ControllerContext.HttpContext.Request.Headers["Authorization"] = "Bearer unittesttoken";
             controller.ControllerContext.HttpContext.Request.Path = new PathString("/v1/unit-test");
-            //controller.ControllerContext.HttpContext.Request.Form.Keys.Add("update");
+
+            //Dictionary<string, StringValues> fields = new Dictionary<string, StringValues>();
+            //fields.Add("key", "value");
+            //FormCollection form = new FormCollection(fields);
+            //controller.ControllerContext.HttpContext.Request.Form = form;
            
+
             return controller;
         }
         protected virtual int GetStatusCode(IActionResult response)
@@ -78,6 +85,96 @@ namespace Com.DanLiris.Service.DealTracking.Test.WebApi.Controllers.v1
             var response =await controller.GetFile("filename_filename2");
             Assert.NotNull(response);
         }
+
+        [Fact]
+        public async Task UploadFile_WhenUpdate_isTrue_Return_NoContent()
+        {
+
+            var azureStorageService = new Mock<IAzureStorageService>();
+            var memorystream = new MemoryStream();
+            azureStorageService.Setup(s => s.GenerateFileName(It.IsAny<string>())).Returns("filename.jpg");
+
+            azureStorageService.Setup(s => s.UploadFile(It.IsAny<MemoryStream>(),It.IsAny<string>(),It.IsAny<string>()));
+            
+            var facade = new Mock<IActivityFacade>();
+            facade.Setup(s => s.ReadById(It.IsAny<long>())).ReturnsAsync(new Activity());
+            var controller = GetController(facade, azureStorageService);
+
+            var fileColection = new FormFileCollection();
+            var IFormFileMock = new Mock<IFormFile>();
+            fileColection.Add(IFormFileMock.Object);
+           
+
+            Dictionary<string, StringValues> fields = new Dictionary<string, StringValues>();
+            fields.Add("update", "true");
+            fields.Add("note", "note");
+            FormCollection form = new FormCollection(fields, fileColection);
+            controller.ControllerContext.HttpContext.Request.Form = form;
+
+
+            var response = await controller.UploadFile();
+            int statusCode = this.GetStatusCode(response);
+            Assert.Equal((int)HttpStatusCode.NoContent, statusCode);
+        }
+
+        [Fact]
+        public async Task UploadFile_When_Update_IsFalse_Return_Create()
+        {
+
+            var azureStorageService = new Mock<IAzureStorageService>();
+            var memorystream = new MemoryStream();
+            azureStorageService.Setup(s => s.GenerateFileName(It.IsAny<string>())).Returns("filename.jpg");
+
+            azureStorageService.Setup(s => s.UploadFile(It.IsAny<MemoryStream>(), It.IsAny<string>(), It.IsAny<string>()));
+
+            var facade = new Mock<IActivityFacade>();
+            facade.Setup(s => s.ReadById(It.IsAny<long>())).ReturnsAsync(new Activity());
+            var controller = GetController(facade, azureStorageService);
+
+            var fileColection = new FormFileCollection();
+            var IFormFileMock = new Mock<IFormFile>();
+            fileColection.Add(IFormFileMock.Object);
+
+
+            Dictionary<string, StringValues> fields = new Dictionary<string, StringValues>();
+            fields.Add("update", "false");
+            fields.Add("note", "note");
+            FormCollection form = new FormCollection(fields, fileColection);
+            controller.ControllerContext.HttpContext.Request.Form = form;
+
+
+            var response = await controller.UploadFile();
+            int statusCode = this.GetStatusCode(response);
+            Assert.Equal((int)HttpStatusCode.Created, statusCode);
+        }
+
+        [Fact]
+        public async Task UploadFile_Throws_InternalServerError()
+        {
+
+            var azureStorageService = new Mock<IAzureStorageService>();
+            var memorystream = new MemoryStream();
+            azureStorageService.Setup(s => s.GenerateFileName(It.IsAny<string>())).Throws(new Exception());
+            azureStorageService.Setup(s => s.UploadFile(It.IsAny<MemoryStream>(), It.IsAny<string>(), It.IsAny<string>()));
+
+            var facade = new Mock<IActivityFacade>();
+            var controller = GetController(facade, azureStorageService);
+
+            var fileColection = new FormFileCollection();
+            var IFormFileMock = new Mock<IFormFile>();
+            fileColection.Add(IFormFileMock.Object);
+
+            Dictionary<string, StringValues> fields = new Dictionary<string, StringValues>();
+            fields.Add("key", "value");
+
+            FormCollection form = new FormCollection(fields, fileColection);
+            controller.ControllerContext.HttpContext.Request.Form = form;
+         
+            var response = await controller.UploadFile();
+            int statusCode = this.GetStatusCode(response);
+            Assert.Equal((int)HttpStatusCode.InternalServerError, statusCode);
+        }
+
 
 
         [Fact]
