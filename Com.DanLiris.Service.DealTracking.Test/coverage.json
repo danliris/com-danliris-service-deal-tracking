@@ -936,7 +936,7 @@
         },
         "System.String Com.DanLiris.Service.DealTracking.Lib.ViewModels.StageViewModel::get_Name()": {
           "Lines": {
-            "12": 4
+            "12": 5
           },
           "Branches": []
         },
@@ -962,12 +962,12 @@
       "Com.DanLiris.Service.DealTracking.Lib.ViewModels.StageViewModel/<Validate>d__20": {
         "System.Boolean Com.DanLiris.Service.DealTracking.Lib.ViewModels.StageViewModel/<Validate>d__20::MoveNext()": {
           "Lines": {
-            "18": 1,
-            "19": 1,
-            "20": 1,
-            "21": 1,
-            "22": 1,
-            "23": 1
+            "18": 2,
+            "19": 2,
+            "20": 2,
+            "21": 2,
+            "22": 2,
+            "23": 2
           },
           "Branches": [
             {
@@ -976,7 +976,7 @@
               "EndOffset": 52,
               "Path": 0,
               "Ordinal": 0,
-              "Hits": 1
+              "Hits": 2
             },
             {
               "Line": 19,
@@ -984,7 +984,7 @@
               "EndOffset": 103,
               "Path": 1,
               "Ordinal": 1,
-              "Hits": 1
+              "Hits": 2
             }
           ]
         }
@@ -1282,25 +1282,25 @@
         },
         "System.Collections.Generic.IEnumerable`1<System.ComponentModel.DataAnnotations.ValidationResult> Com.DanLiris.Service.DealTracking.Lib.Utilities.ServiceValidationException::get_ValidationResults()": {
           "Lines": {
-            "21": 26
+            "21": 27
           },
           "Branches": []
         },
         "System.Void Com.DanLiris.Service.DealTracking.Lib.Utilities.ServiceValidationException::.ctor(System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.IEnumerable`1<System.ComponentModel.DataAnnotations.ValidationResult>)": {
           "Lines": {
-            "10": 13,
-            "11": 13,
-            "13": 13
+            "10": 14,
+            "11": 14,
+            "13": 14
           },
           "Branches": []
         },
         "System.Void Com.DanLiris.Service.DealTracking.Lib.Utilities.ServiceValidationException::.ctor(System.String,System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.IEnumerable`1<System.ComponentModel.DataAnnotations.ValidationResult>)": {
           "Lines": {
-            "14": 13,
-            "15": 13,
-            "16": 13,
-            "17": 13,
-            "18": 13
+            "14": 14,
+            "15": 14,
+            "16": 14,
+            "17": 14,
+            "18": 14
           },
           "Branches": []
         }
@@ -1559,11 +1559,11 @@
       "Com.DanLiris.Service.DealTracking.Lib.Services.ValidateService": {
         "System.Void Com.DanLiris.Service.DealTracking.Lib.Services.ValidateService::Validate(System.Object)": {
           "Lines": {
-            "19": 0,
-            "20": 0,
-            "21": 0,
-            "23": 0,
-            "24": 0,
+            "19": 1,
+            "20": 1,
+            "21": 1,
+            "23": 1,
+            "24": 1,
             "25": 0
           },
           "Branches": [
@@ -1573,7 +1573,7 @@
               "EndOffset": 16,
               "Path": 1,
               "Ordinal": 1,
-              "Hits": 0
+              "Hits": 1
             },
             {
               "Line": 21,
@@ -1581,7 +1581,7 @@
               "EndOffset": 89,
               "Path": 0,
               "Ordinal": 0,
-              "Hits": 0
+              "Hits": 1
             },
             {
               "Line": 23,
@@ -1589,7 +1589,7 @@
               "EndOffset": 137,
               "Path": 1,
               "Ordinal": 3,
-              "Hits": 0
+              "Hits": 1
             },
             {
               "Line": 23,
@@ -1597,7 +1597,7 @@
               "EndOffset": 181,
               "Path": 0,
               "Ordinal": 2,
-              "Hits": 0
+              "Hits": 1
             },
             {
               "Line": 23,
@@ -1605,7 +1605,7 @@
               "EndOffset": 205,
               "Path": 1,
               "Ordinal": 5,
-              "Hits": 0
+              "Hits": 1
             },
             {
               "Line": 23,
@@ -1613,7 +1613,7 @@
               "EndOffset": 249,
               "Path": 0,
               "Ordinal": 4,
-              "Hits": 0
+              "Hits": 1
             },
             {
               "Line": 23,
@@ -1621,7 +1621,7 @@
               "EndOffset": 273,
               "Path": 1,
               "Ordinal": 7,
-              "Hits": 0
+              "Hits": 1
             },
             {
               "Line": 23,
@@ -1629,7 +1629,7 @@
               "EndOffset": 362,
               "Path": 0,
               "Ordinal": 6,
-              "Hits": 0
+              "Hits": 1
             },
             {
               "Line": 23,
@@ -1637,7 +1637,7 @@
               "EndOffset": 410,
               "Path": 0,
               "Ordinal": 8,
-              "Hits": 0
+              "Hits": 1
             },
             {
               "Line": 23,
@@ -1651,10 +1651,10 @@
         },
         "System.Void Com.DanLiris.Service.DealTracking.Lib.Services.ValidateService::.ctor(System.IServiceProvider)": {
           "Lines": {
-            "13": 0,
-            "14": 0,
-            "15": 0,
-            "16": 0
+            "13": 1,
+            "14": 1,
+            "15": 1,
+            "16": 1
           },
           "Branches": []
         }
