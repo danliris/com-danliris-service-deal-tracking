@@ -1,6 +1,7 @@
 ﻿using Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades;
 using Com.DanLiris.Service.DealTracking.Lib.Models;
 using Com.DanLiris.Service.DealTracking.Test.BusinessLogic.Utils;
+using Microsoft.CodeAnalysis.CSharp;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -15,7 +16,7 @@ namespace Com.DanLiris.Service.DealTracking.Test.BusinessLogic.DataUtils
         }
         public override async Task<Company> GetNewData()
         {
-            return new Company()
+            return new  Company()
             {
                 Code = "Code",
                 Name = "Name",
