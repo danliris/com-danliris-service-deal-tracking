@@ -1,7 +1,7 @@
 # com-danliris-service-deal-tracking
 
 DanLiris Application is a enterprise project that aims to manage the business processes of a textile factory, PT. DanLiris.
-This application is a microservices application consisting of services based on .NET Core and Aurelia Js which part of  NodeJS Frontend Framework. This application show how to implement microservice architecture principles. com-danliris-service-finance-accounting repository is part of service that will serve system authentication.
+This application is a microservices application consisting of services based on .NET Core and Aurelia Js which part of  NodeJS Frontend Framework. This application show how to implement microservice architecture principles. com-danliris-service-finance-accounting repository is part of service that will serve deal tracking service.
 
 ## Prerequisites
 * Windows, Mac or Linux
@@ -129,7 +129,7 @@ com-danliris-service-deal-tracking
 ### Root directory and description
 
 ```
-com-danliris-service-auth
+com-danliris-service-deal-tracking
  ┣ Com.DanLiris.Service.DealTracking.Lib
  ┣ Com.DanLiris.Service.DealTracking.Test
  ┣ Com.DanLiris.Service.DealTracking.WebApi
@@ -137,7 +137,7 @@ com-danliris-service-auth
  ┣ .codecov.yml
  ┣ .gitignore
  ┣ .travis.yml
- ┣ Com.Danliris.Service.Auth.sln
+ ┣ Com.DanLiris.Service.DealTracking.sln
  ┗ README.md
  ```
 
@@ -161,10 +161,6 @@ Models:
 ViewModels
 
 - The View Model refers to the objects which hold the data that needs to be shown to the user.The View Model is related to the presentation layer of our application. They are defined based on how the data is presented to the user rather than how they are stored.
-
-Configs
-
-- Collection of classes to setup entity model  that will be used in EF framework to generate schema database.
 
 Migrations
 
@@ -495,9 +491,6 @@ Important class that contains the entry point to the application. The file has t
 
 This file contains Startup class. The Startup class configures services and the app's request pipeline.Optionally includes a ConfigureServices method to configure the app's services. A service is a reusable component that provides app functionality. Services are registered in ConfigureServices and consumed across the app via dependency injection (DI) or ApplicationServices.This class also Includes a Configure method to create the app's request processing pipeline.
 
-**File .codecov.yml**
-
-This file is used to configure code coverage in unit tests.
 
 **File .travis.yml**
 
