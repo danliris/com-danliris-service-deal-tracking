@@ -11,6 +11,7 @@ using Com.DanLiris.Service.DealTracking.Lib.ViewModels;
 using Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades;
 using AutoMapper;
 using Com.DanLiris.Service.DealTracking.Lib.Services;
+using Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Interfaces;
 
 namespace Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1
 {
@@ -18,10 +19,10 @@ namespace Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1
     [ApiVersion("1.0")]
     [Route("v{version:apiVersion}/contacts")]
     [Authorize]
-    public class ContactController : BaseController<Contact, ContactViewModel, ContactFacade>
+    public class ContactController : BaseController<Contact, ContactViewModel, IContactFacade>
     {
         private readonly static string apiVersion = "1.0";
-        public ContactController(IMapper mapper, IdentityService identityService, ValidateService validateService, ContactFacade bookingOrderFacade) : base(mapper, identityService, validateService, bookingOrderFacade, apiVersion)
+        public ContactController(IMapper mapper, IIdentityService identityService, IValidateService validateService, IContactFacade bookingOrderFacade) : base(mapper, identityService, validateService, bookingOrderFacade, apiVersion)
         {
         }
     }

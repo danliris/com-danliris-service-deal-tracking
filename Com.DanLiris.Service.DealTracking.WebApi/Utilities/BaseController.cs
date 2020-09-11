@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -14,15 +15,16 @@ namespace Com.DanLiris.Service.DealTracking.WebApi.Utilities
 {
     public abstract class BaseController<TModel, TViewModel, TFacade> : Controller
         where TModel : BaseModel
+        where TViewModel : BaseViewModel, IValidatableObject
         where TFacade : IBaseFacade<TModel>
     {
         protected readonly IMapper Mapper;
-        protected readonly IdentityService IdentityService;
-        protected readonly ValidateService ValidateService;
+        protected readonly IIdentityService IdentityService;
+        protected readonly IValidateService ValidateService;
         protected readonly TFacade Facade;
         protected readonly string ApiVersion;
 
-        public BaseController(IMapper mapper, IdentityService identityService, ValidateService validateService, TFacade facade, string apiVersion)
+        public BaseController(IMapper mapper, IIdentityService identityService, IValidateService validateService, TFacade facade, string apiVersion)
         {
             this.Mapper = mapper;
             this.IdentityService = identityService;
@@ -45,11 +47,6 @@ namespace Com.DanLiris.Service.DealTracking.WebApi.Utilities
         [HttpGet]
         public IActionResult Get(int page = 1, int size = 25, string order = "{}", [Bind(Prefix = "Select[]")]List<string> select = null, string keyword = null, string filter = "{}")
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
             try
             {
                 ValidateUser();
@@ -89,7 +86,9 @@ namespace Com.DanLiris.Service.DealTracking.WebApi.Utilities
                 Dictionary<string, object> Result =
                     new ResultFormatter(ApiVersion, Common.CREATED_STATUS_CODE, Common.OK_MESSAGE)
                     .Ok();
-                return Created(String.Concat(Request.Path, "/", model.Id), Result);
+                return Created(String.Concat(Request.Path, "/", 0), Result);
+                //return Created(String.Concat(Request.Path, "/", model.Id), Result);
+
             }
             catch (ServiceValidationException e)
             {
@@ -108,16 +107,11 @@ namespace Com.DanLiris.Service.DealTracking.WebApi.Utilities
         }
 
         [HttpGet("{Id}")]
-        public async Task<IActionResult> GetById([FromRoute] int id)
+        public async Task<IActionResult> GetById([FromRoute] int Id)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
             try
             {
-                TModel model = await Facade.ReadById(id);
+                TModel model = await Facade.ReadById(Id);
 
                 if (model == null)
                 {
@@ -145,7 +139,7 @@ namespace Com.DanLiris.Service.DealTracking.WebApi.Utilities
         }
 
         [HttpPut("{Id}")]
-        public async Task<IActionResult> Put([FromRoute] int id, [FromBody] TViewModel viewModel)
+        public async Task<IActionResult> Put([FromRoute] int Id, [FromBody] TViewModel viewModel)
         {
             if (!ModelState.IsValid)
             {
@@ -159,7 +153,7 @@ namespace Com.DanLiris.Service.DealTracking.WebApi.Utilities
 
                 TModel model = Mapper.Map<TModel>(viewModel);
 
-                if (id != model.Id)
+                if (Id != model.Id)
                 {
                     Dictionary<string, object> Result =
                         new ResultFormatter(ApiVersion, Common.BAD_REQUEST_STATUS_CODE, Common.BAD_REQUEST_MESSAGE)
@@ -167,7 +161,7 @@ namespace Com.DanLiris.Service.DealTracking.WebApi.Utilities
                     return BadRequest(Result);
                 }
 
-                await Facade.Update(id, model);
+                await Facade.Update(Id, model);
 
                 return NoContent();
             }
@@ -195,7 +189,7 @@ namespace Com.DanLiris.Service.DealTracking.WebApi.Utilities
         }
 
         [HttpDelete("{Id}")]
-        public async Task<IActionResult> Delete([FromRoute] int id)
+        public async Task<IActionResult> Delete([FromRoute] int Id)
         {
             if (!ModelState.IsValid)
             {
@@ -205,7 +199,7 @@ namespace Com.DanLiris.Service.DealTracking.WebApi.Utilities
             try
             {
                 ValidateUser();
-                await Facade.Delete(id);
+              var data=  await Facade.Delete(Id);
 
                 return NoContent();
             }

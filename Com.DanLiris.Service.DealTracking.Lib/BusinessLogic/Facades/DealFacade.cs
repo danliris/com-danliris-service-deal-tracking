@@ -85,7 +85,9 @@ namespace Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades
 
         public async Task<Deal> ReadById(long id)
         {
-            return await DealLogic.ReadById(id);
+           var result = await DealLogic.ReadById(id);
+            return result;
+            //return await DealLogic.ReadById(id);
         }
 
         public async Task<int> Update(long id, Deal model)

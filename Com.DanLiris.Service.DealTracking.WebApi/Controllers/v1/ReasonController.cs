@@ -11,6 +11,7 @@ using Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Facades;
 using AutoMapper;
 using Com.DanLiris.Service.DealTracking.Lib.Services;
 using Com.DanLiris.Service.DealTracking.Lib.ViewModels;
+using Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Interfaces;
 
 namespace Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1
 {
@@ -18,10 +19,10 @@ namespace Com.DanLiris.Service.DealTracking.WebApi.Controllers.v1
     [ApiVersion("1.0")]
     [Route("v{version:apiVersion}/deal-tracking-reasons")]
     [Authorize]
-    public class ReasonController : BaseController<Reason, ReasonViewModel, ReasonFacade>
+    public class ReasonController : BaseController<Reason, ReasonViewModel, IReasonFacade>
     {
         private readonly static string apiVersion = "1.0";
-        public ReasonController(IMapper mapper, IdentityService identityService, ValidateService validateService, ReasonFacade bookingOrderFacade) : base(mapper, identityService, validateService, bookingOrderFacade, apiVersion)
+        public ReasonController(IMapper mapper, IIdentityService identityService, IValidateService validateService, IReasonFacade bookingOrderFacade) : base(mapper, identityService, validateService, bookingOrderFacade, apiVersion)
         {
         }
     }

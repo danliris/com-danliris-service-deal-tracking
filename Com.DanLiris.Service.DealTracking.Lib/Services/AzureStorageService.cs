@@ -9,12 +9,15 @@ using System.Threading.Tasks;
 
 namespace Com.DanLiris.Service.DealTracking.Lib.Services
 {
-    public class AzureStorageService
+    public class AzureStorageService: IAzureStorageService
     {
         private IServiceProvider ServiceProvider { get; set; }
-        private CloudStorageAccount StorageAccount { get; set; }
-        private CloudBlobContainer StorageContainer { get; set; }
+        //private CloudStorageAccount StorageAccount { get; set; }
+        //private CloudBlobContainer StorageContainer { get; set; }
         private const string TIMESTAMP_FORMAT = "yyyyMMddHHmmssffff";
+        
+        private readonly CloudStorageAccount _storageAccount;
+        private readonly CloudBlobContainer _storageContainer;
 
         public AzureStorageService(IServiceProvider serviceProvider)
         {
@@ -23,14 +26,22 @@ namespace Com.DanLiris.Service.DealTracking.Lib.Services
             string storageContainer = "deal-tracking";
 
             this.ServiceProvider = serviceProvider;
-            this.StorageAccount = new CloudStorageAccount(new StorageCredentials(storageAccountName, storageAccountKey), useHttps: true);
-            this.StorageContainer = this.Configure(storageContainer).GetAwaiter().GetResult();
+            //this.StorageAccount = new CloudStorageAccount(new StorageCredentials(storageAccountName, storageAccountKey), useHttps: true);
+            //this.StorageContainer = this.Configure(storageContainer).GetAwaiter().GetResult();
+
+            _storageAccount = new CloudStorageAccount(new StorageCredentials(storageAccountName, storageAccountKey), useHttps: true);
+            _storageContainer = this.Configure(storageContainer).GetAwaiter().GetResult();
+        }
+
+        public CloudBlobContainer GetStorageContainer()
+        {
+            return _storageContainer;
         }
 
         private async Task<CloudBlobContainer> Configure(string storageContainer)
         {
-            CloudBlobClient cloudBlobClient = this.StorageAccount.CreateCloudBlobClient();
-
+          //  CloudBlobClient cloudBlobClient = this.StorageAccount.CreateCloudBlobClient();
+            CloudBlobClient cloudBlobClient = _storageAccount.CreateCloudBlobClient();
             CloudBlobContainer cloudBlobContainer = cloudBlobClient.GetContainerReference(storageContainer);
             await cloudBlobContainer.CreateIfNotExistsAsync();
 
@@ -58,7 +69,8 @@ namespace Com.DanLiris.Service.DealTracking.Lib.Services
         public async Task UploadFile(MemoryStream stream, string Module, string fileName)
         {
             stream.Position = 0;
-            CloudBlobContainer container = this.StorageContainer;
+           // CloudBlobContainer container = this.StorageContainer;
+            CloudBlobContainer container = _storageContainer;
             CloudBlobDirectory dir = container.GetDirectoryReference(Module);
             CloudBlockBlob blob = dir.GetBlockBlobReference(fileName);
             await blob.UploadFromStreamAsync(stream);
@@ -66,7 +78,8 @@ namespace Com.DanLiris.Service.DealTracking.Lib.Services
 
         public async Task<MemoryStream> DownloadFile(string Module, string fileName)
         {
-            CloudBlobContainer container = this.StorageContainer;
+           // CloudBlobContainer container = this.StorageContainer;
+            CloudBlobContainer container = _storageContainer;
             CloudBlobDirectory dir = container.GetDirectoryReference(Module);
             CloudBlockBlob blob = dir.GetBlockBlobReference(fileName);
             await blob.FetchAttributesAsync();
@@ -79,7 +92,8 @@ namespace Com.DanLiris.Service.DealTracking.Lib.Services
 
         public async Task DeleteImage(string Module, string fileName)
         {
-            CloudBlobContainer container = this.StorageContainer;
+            //CloudBlobContainer container = this.StorageContainer;
+            CloudBlobContainer container = _storageContainer;
             CloudBlobDirectory dir = container.GetDirectoryReference(Module);
 
             CloudBlockBlob blob = dir.GetBlockBlobReference(fileName);

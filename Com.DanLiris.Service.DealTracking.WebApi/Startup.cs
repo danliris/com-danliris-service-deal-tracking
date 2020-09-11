@@ -16,6 +16,7 @@ using Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Implementation;
 using Swashbuckle.AspNetCore.Swagger;
 using System.Collections.Generic;
 using System.Linq;
+using Com.DanLiris.Service.DealTracking.Lib.BusinessLogic.Interfaces;
 
 namespace Com.DanLiris.Service.DealTracking
 {
@@ -35,13 +36,13 @@ namespace Com.DanLiris.Service.DealTracking
         private void RegisterFacades(IServiceCollection services)
         {
             services
-                .AddTransient<CompanyFacade>()
-                .AddTransient<ContactFacade>()
-                .AddTransient<ReasonFacade>()
-                .AddTransient<BoardFacade>()
-                .AddTransient<StageFacade>()
-                .AddTransient<DealFacade>()
-                .AddTransient<ActivityFacade>();
+                .AddTransient<ICompanyFacade,CompanyFacade>()
+                .AddTransient<IContactFacade,ContactFacade>()
+                .AddTransient<IReasonFacade,ReasonFacade>()
+                .AddTransient<IBoardFacade,BoardFacade>()
+                .AddTransient<IStageFacade,StageFacade>()
+                .AddTransient<IDealFacade,DealFacade>()
+                .AddTransient<IActivityFacade,ActivityFacade>();
         }
 
         private void RegisterLogic(IServiceCollection services)
@@ -59,9 +60,10 @@ namespace Com.DanLiris.Service.DealTracking
         private void RegisterServices(IServiceCollection services)
         {
             services
-                .AddScoped<AzureStorageService>()
-                .AddScoped<IdentityService>()
-                .AddScoped<ValidateService>();
+                .AddScoped<IHttpClientService, HttpClientService>()
+                .AddScoped<IAzureStorageService,AzureStorageService>()
+                .AddScoped<IIdentityService,IdentityService>()
+                .AddScoped<IValidateService,ValidateService>();
         }
 
         #endregion Register
